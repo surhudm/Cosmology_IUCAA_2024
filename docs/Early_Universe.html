@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The early Universe &mdash; Cosmology IUCAA 2024 0.99 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=bb63aafa"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The inhomogeneous Universe" href="Inhomogeneous_Universe.html" />
+    <link rel="prev" title="Friedmann Robertson Walker models" href="FRW_models.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Cosmology IUCAA 2024
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction to Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cosmological_principle.html">Cosmological principle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FRW_models.html">Friedmann Robertson Walker models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The early Universe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Limiting-cases-for-thermodynamic-quantities">Limiting cases for thermodynamic quantities</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Relativistic-limit">Relativistic limit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Non-relativistic-limits">Non relativistic limits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Effective-number-of-degrees-of-freedom-for-arbitrary-particles:">Effective number of degrees of freedom for arbitrary particles:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Total-effective-degrees-of-freedom">Total effective degrees of freedom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Particle-freeze-out">Particle freeze out</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Temperature-of-a-decoupled-relativistic-species">Temperature of a decoupled relativistic species</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Cosmic-Neutrino-background">Cosmic Neutrino background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Nucleosynthesis">Nucleosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Cosmic-microwave-background">Cosmic microwave background</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Cosmological-parameters-from-the-cosmic-microwave-background">Cosmological parameters from the cosmic microwave background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Reference-material-for-reading-about-the-cosmic-microwave-background:">Reference material for reading about the cosmic microwave background:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Problems-with-the-standard-cosmological-model">Problems with the standard cosmological model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Flatness-problem">Flatness problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Horizon-problem">Horizon problem</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Inflation-as-a-solution">Inflation as a solution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Inhomogeneous_Universe.html">The inhomogeneous Universe</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cosmology IUCAA 2024</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">The early Universe</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Early_Universe.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+</pre></div>
+</div>
+</div>
+<section id="The-early-Universe">
+<h1>The early Universe<a class="headerlink" href="#The-early-Universe" title="Link to this heading"></a></h1>
+<p>According to the observations, the Universe is expanding today. Extrapolating backwards, this implies that the scale factor of the Universe must be quite small in the past. The radiation energy density scales as <span class="math notranslate nohighlight">\(\rho_{\rm rad} \propto a^{-4}\)</span>. It must be the dominating source of energy density in the Early Universe, dominating over matter, <span class="math notranslate nohighlight">\(\Lambda\)</span> as well as the curvature. During this radiation dominated era, the temperature of the Universe would be determined by the properties of
+radiation. Assuming a black body nature for this radiation with temperature <span class="math notranslate nohighlight">\(T\)</span>, and assuming that physical constants of the Universe such as the radiation constant do not depend upon time, <span class="math notranslate nohighlight">\(\rho_{\rm rad} = 4(\sigma/c)T^4\)</span>, where <span class="math notranslate nohighlight">\(\sigma\)</span> is the Boltzmann constant. Combining the behaviour of the radiation energy density with the scale factor and its behaviour with the temperature, we obtain the relation between temperature and the scale factor, <span class="math notranslate nohighlight">\(T \propto a^{-1}\)</span>.</p>
+<p>The temperature of the Universe is thus inversely proportional to the scale factor, which implies that the Universe had a higher temperature at earlier epochs. Given that in the radiation dominated era, <span class="math notranslate nohighlight">\(a \propto t^{1/2}\)</span> where <span class="math notranslate nohighlight">\(t\)</span> is the time, we obtain a relation between temperature and time <span class="math notranslate nohighlight">\(T \propto t^{-1/2}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul>
+<li><p>Show that: <span class="math">\begin{equation}
+T \sim 1.5 \times 10^{10} K \left[\frac{t}{\rm second}\right]^{-1/2}
+\end{equation}</span> where <span class="math notranslate nohighlight">\(t=0\)</span> is defined to be the time when the scale factor <span class="math notranslate nohighlight">\(a(t) = 0\)</span>, and equivalently, :nbsphinx-math:<a href="#id1"><span class="problematic" id="id2">`</span></a>begin{equation}</p>
+<blockquote>
+<div><p>T= 1,text{MeV}, left[frac{t}{1 s}right]^{-frac{1}{2}}</p>
+</div></blockquote>
+<p>end{equation}` These equations are valid in the radiation dominated era.</p>
+</li>
+</ul>
+</div>
+<p>In the earliest time in the Universe, when the temperature was of the order of <span class="math notranslate nohighlight">\(10^{16} {\rm K} \sim 1 {\rm TeV}\)</span>, the Universe was full of elementary particles in the standard model, all in thermal equilibrium because of the high rate of interactions. The particle production and annihilation processes operate in equilibrium to keep a steady state abundance (<span class="math notranslate nohighlight">\(na^3\)</span>) of these particles. However as the temperature of the Universe fell due to the expansion, the production rate is not
+able to keep up with the annihilation rate. These changes typically happen at a temperature corresponding to the rest mass of the particles <span class="math notranslate nohighlight">\(mc^2 \sim k_{\rm B}T\)</span>. The top quark (<span class="math notranslate nohighlight">\(m \sim 173.07\)</span> GeV/<span class="math notranslate nohighlight">\(c^2\)</span>) started to annihilate with its antiparticle at around <span class="math notranslate nohighlight">\(t \sim 10^{-11}-10^{-12}s\)</span>. Given the mass hierarchy in the standard model, all the particle species annihilate one after the other (muons), leaving a trace amount of protons, neutrons, electrons and neutrinos. The
+reason why antimatter and matter had a small asymmetry (the baryon asymmetry problem) is a topic of intense research which we will not get into.</p>
+<p>Let us consider the epoch in the Universe when it was hot enough to have free neutrons and protons around, alongwith radiation. These protons and neutrons would eventually get together to form heavier nuclei. The hot radiation prevents the formation of nuclei, however the Universe cools down as it expands, and then it becomes possible for the heavy nuclei to form. The radiation from the Universe’s hot past, would have expanded by now and cooled down, but should still be visible. In 1965, the
+discovery of the cosmic microwave background radiation by Arnos Penzias and Robert Wilson, which follows the blackbody curve has bolstered the idea of this hot and dense past of the Universe which was in thermodynamic equilibrium.</p>
+<p>The different constituents of the Universe interact with each other and radiation via their standard model interactions. If we assume that thermal equilibrium holds, we can write down the distribution functions for any particular species. The distribution function gives the number of particles which have a momentum <span class="math notranslate nohighlight">\(|\vec{p}| \pm d{p}/2\)</span>. For a species X in thermal equlibirum, the distribution function is given by</p>
+<p><span class="math">\begin{equation}
+f_{\rm X}(|\vec{p}|) = \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{E_{\rm X}-\mu_{\rm X}}{k_{\rm B}T}\right) \pm 1 \right]^{-1}
+\end{equation}</span></p>
+<p>where the energy <span class="math notranslate nohighlight">\(E_{\rm X} = \sqrt{ p^2c^2 + m_{\rm X}^2c^4}\)</span>, <span class="math notranslate nohighlight">\(\mu_{\rm X}\)</span> is the chemical potential of a species, <span class="math notranslate nohighlight">\(g_{\rm X}\)</span> the number of degenerate states at a given energy level, and <span class="math notranslate nohighlight">\(k_{\rm B}\)</span> is the Boltzmann’s constant. The choice of the sign depends upon the nature of the species, the <span class="math notranslate nohighlight">\(-\)</span> sign corresponds to bosons, while the <span class="math notranslate nohighlight">\(+\)</span> sign corresponds to fermions.</p>
+<p>The chemical potential for photons is zero (as they can be added or subtracted) without any change to the free energy. The chemical potentials of pairs of particles and antiparticles are opposite in sign to each other, as they can annihilate and create photons. The chemical potentials are dependent upon the number densities of these particles. The ratio of the number density of baryons to photons is quite small today (<span class="math notranslate nohighlight">\(\sim 10^{-8}-10^{-9}\)</span>). This ratio is constant as both the number
+densities fall as <span class="math notranslate nohighlight">\(a^{-3}\)</span>. The lepton density is also small, and so all the chemical potentials can be assumed to be close to zero and negligible.</p>
+<p>One can compute the number density, energy density, pressure and entropy density of particles in thermal equilibrium using the equations</p>
+<p><span class="math">\begin{eqnarray}
+n_{\rm X} &=& \int_0^{\infty} f_{\rm X} dp =   \int_0^{\infty} \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{E_{\rm X}}{k_{\rm B}T}\right) \pm 1 \right]^{-1} dp \\
+\rho_{\rm x} c^2 =\epsilon_{\rm X} &=& \int_0^{\infty} E_{\rm X}(p) f_{\rm X} dp = \int_0^{\infty} (p^2c^2+m_{\rm X}^2c^4)^{1/2} \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{E_{\rm X}}{k_{\rm B}T}\right) \pm 1 \right]^{-1} dp \\
+P_{\rm X} &=& \int_0^{\infty} \frac{p^2 c^2}{3 E_{\rm X}} f_{\rm X} dp = \int_0^{\infty}  \frac{p^2 c^2}{3 (p^2c^2+m_{\rm X}^2c^4)^{1/2} }  \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{E_{\rm X}}{k_{\rm B}T}\right) \pm 1 \right]^{-1} dp  \\
+s_{\rm X} &=& \left( P_{\rm X} + \epsilon_{\rm X} \right) /T
+\end{eqnarray}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Show that:</p></li>
+</ul>
+<p><span class="math">\begin{equation}
+\frac{dP_{\rm X}}{dT} = \frac{P_{\rm X}+\epsilon_{\rm X}}{T}
+\end{equation}</span> First differentiate the pressure expression with respect to <span class="math notranslate nohighlight">\(T\)</span>, change the variable from <span class="math notranslate nohighlight">\(p\)</span> to <span class="math notranslate nohighlight">\(E\)</span> and then integrate the expression by parts using the formula <span class="math">\begin{equation}
+\int u v dw = uvw - \int u w dv - \int v w du
+\end{equation}</span> Then use this in combination with <span class="math">\begin{equation}
+\frac{d}{dt}\left[ a^3 \rho c^2 \right] + p \frac{d}{dt}\left[ a^3 \right] = 0
+\end{equation}</span> to show that the entropy density of the Universe is conserved. <span class="math">\begin{equation}
+\frac{d}{dt}(a^3 s) = 0
+\end{equation}</span></p>
+</div>
+<p>First begin by defining: <span class="math">\begin{equation}
+f_{\rm X} = p^2 \tilde f(\mu)
+\end{equation}</span> where <span class="math notranslate nohighlight">\(\mu=E/k_{\rm B}T\)</span>. And using the expression for <span class="math notranslate nohighlight">\(E(p)\)</span>, we find that <span class="math">\begin{equation}
+\frac{dE}{dp} = \frac{2pc^2}{2\sqrt{p^2c^2+m^2c^4}} = \frac{pc^2}{E}
+\end{equation}</span></p>
+<p>Using the above equations we get, <span class="math">\begin{eqnarray}
+\frac{dp_{\rm X}}{dT} &=& \int \frac{p^2c^2}{3E_{\rm x}} p^2 \frac{d\tilde f}{d\mu} \frac{d\mu}{dT} dp \\
+T \frac{dp_{\rm X}}{dT} &=& -\int \frac{p^2c^2}{3} p^2 \frac{d \tilde f}{d\mu} \frac{1}{k_{\rm B}T} dp \\
+&=& -\int \frac{p^3c^2}{3} \left(p \frac{dp}{dE}\right) d\tilde f \\
+&=& -\int \frac{p^3c^2}{3} \left(\frac{E}{c^2}\right) d\tilde f \\
+&=& \int p^2 \tilde f(\mu) E dp + \int \frac{p^3}{3} \tilde f \frac{dE}{dp} dp \\
+&=& \int p^2 \tilde f(\mu) E dp + \int \frac{p^2c^2}{3E} \tilde f dp \\
+&=& \epsilon_{\rm X} + P_{\rm X}
+\end{eqnarray}</span></p>
+<section id="Limiting-cases-for-thermodynamic-quantities">
+<h2>Limiting cases for thermodynamic quantities<a class="headerlink" href="#Limiting-cases-for-thermodynamic-quantities" title="Link to this heading"></a></h2>
+<section id="Relativistic-limit">
+<h3>Relativistic limit<a class="headerlink" href="#Relativistic-limit" title="Link to this heading"></a></h3>
+<p>In the relativistic limits we can assume $m_{<span class="math">\rm X</span>}<sup>2c</sup>4 &lt;&lt; p<sup>2c</sup>2 $, and compute these integrals analytically. We begin by noting that in this limit <span class="math notranslate nohighlight">\(E/(k_{\rm B}T) \sim (pc/k_{\rm B}T)\)</span>. Therefore for bosons we have <span class="math">\begin{equation}
+\frac{1}{\exp\left( \frac{E}{k_{\rm B}T}\right) - 1} \sim \frac{1}{\exp\left( \frac{pc}{k_{\rm B}T}\right) - 1}\,.
+\end{equation}</span> The number density of bosons will be then given by <span class="math">\begin{eqnarray}
+n_{\rm X} &=&  \int_0^{\infty} \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{pc}{k_{\rm B}T}\right) - 1 \right]^{-1} dp \\
+&=& \int_0^{\infty} \frac{g_{\rm X}}{2\pi^2} \frac{p^2c^2}{k_{\rm B}T} \left[ \exp\left( \frac{pc}{k_{\rm B}T}\right) - 1 \right]^{-1} d\frac{pc}{k_{\rm B}T} \left[\frac{k_{\rm B}T}{c \hslash}\right]^3\\
+&=& \frac{g_{\rm X}}{\pi^2} \left[\frac{k_{\rm B}T}{c \hslash}\right]^3 \left[ \frac{1}{2}\int_0^{\infty} \frac{\mu^2}{e^\mu - 1} d\mu \right] \\
+&=& \frac{g_{\rm X}}{\pi^2} \left[\frac{k_{\rm B}T}{c \hslash}\right]^3 \zeta(3)
+\end{eqnarray}</span> For the fermions we have to use <span class="math">\begin{equation}
+\frac{1}{e^x+1} = \frac{1}{e^x-1} - \frac{2}{e^{2x}-1}
+\end{equation}</span></p>
+<p>These give us the following expressions for the number density of fermions and bosons <span class="math">\begin{eqnarray}
+n^{\rm rel}_{\rm b} &=& g \frac{\zeta(3)}{\pi^2} \left[\frac{k_{\rm B}T}{\hslash c}\right]^3 \\
+n^{\rm rel}_{\rm f} &=&  \frac{3}{4}g \frac{\zeta(3)}{\pi^2} \left[\frac{k_{\rm B}T}{\hslash c}\right]^3  = \frac{3}{4}n^{\rm rel}_{\rm b}
+\end{eqnarray}</span></p>
+<p>For the energy density of fermions and bosons, you will get expressions involving <span class="math notranslate nohighlight">\(\zeta(4) = \pi^4/90\)</span>. <span class="math">\begin{eqnarray}
+\epsilon^{\rm rel}_{\rm b} &=& g \frac{\pi^2}{30} \frac{\left[k_{\rm B}T\right]^4}{\left[\hslash c\right]^3} \\
+\epsilon^{\rm rel}_{\rm f} &=&  \frac{7}{8} g \frac{\pi^2}{30} \frac{\left[k_{\rm B}T\right]^4}{\left[\hslash c\right]^3} = \frac{7}{8}\epsilon^{\rm rel}_{\rm b}
+\end{eqnarray}</span></p>
+<p>and the pressure of fermions and bosons equal to <span class="math">\begin{eqnarray}
+p^{\rm rel}_{\rm b} &=& g \frac{\pi^2}{90} \frac{\left[k_{\rm B}T\right]^4}{\left[\hslash c\right]^3} \\
+p^{\rm rel}_{\rm f} &=&  \frac{7}{8} g \frac{\pi^2}{90} \frac{\left[k_{\rm B}T\right]^4}{\left[\hslash c\right]^3}  = \frac{7}{8} p^{\rm rel}_{\rm b}
+\end{eqnarray}</span></p>
+<p>Using the formula for entropy density, we find <span class="math">\begin{eqnarray}
+s^{\rm rel}_{\rm b} = g \frac{4\pi^2}{90} \frac{\left[k_{\rm B}T\right]^4}{T\left[\hslash c\right]^3} \\
+s^{\rm rel}_{\rm f} =  \frac{7}{8} g \frac{4\pi^2}{90} \frac{\left[k_{\rm B}T\right]^4}{T\left[\hslash c\right]^3}  = \frac{7}{8} s^{\rm rel}_{\rm b}
+\end{eqnarray}</span> Also note that, irrespective of whether the species is baryonic or fermionic we obtain <span class="math">\begin{eqnarray}
+s^{\rm rel} = \frac{4 p_{\rm rel}}{T}
+\end{eqnarray}</span></p>
+</section>
+<section id="Non-relativistic-limits">
+<h3>Non relativistic limits<a class="headerlink" href="#Non-relativistic-limits" title="Link to this heading"></a></h3>
+<p>In the non-relativistic limits, <span class="math">\begin{eqnarray}
+E &=& [m^2c^4 + p^2c^2]^{1/2} \\
+&=& mc^2 \left[ 1 + \frac{p^2}{m^2c^2} \right]^{1/2}\\
+&\sim& mc^2 \left[ 1 + \frac{p^2}{2m^2c^2} \right]
+\end{eqnarray}</span> Therefore <span class="math">\begin{eqnarray}
+\frac{1}{\exp\left(\frac{E}{k_{\rm B}T}\right) \pm 1 } \sim \exp\left( -\frac{mc^2}{k_{\rm B}T}\right) \exp \left( -\frac{p^2 }{2mk_{\rm B}T} \right)
+\end{eqnarray}</span></p>
+<p>Therefore the number density is given by <span class="math">\begin{eqnarray}
+n_{\rm x} &=&  \frac{g_{\rm X}}{\hslash^3}\left( \frac{m_{\rm X}k_{\rm B}T}{2\pi} \right)^{3/2} \exp\left[ -\frac{m_{\rm X}c^2}{k_{\rm B}T} \right]\\
+\epsilon_{\rm X} &=& m_{\rm X} c^2 n_{\rm X}\\
+P_{\rm X} &=& n_{\rm X}k_{\rm B}T \\
+s_{\rm X} &=& \frac{m_{\rm X}n_{\rm X}c^2}{T}
+\end{eqnarray}</span></p>
+<p><img alt="Standard Model of Elementary Particles" class="no-scaled-link" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Standard_Model_of_Elementary_Particles.svg/512px-Standard_Model_of_Elementary_Particles.svg.png" style="width: 512px;" /></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>Depending upon the mass of the particles, the creation process starts to become less dominant compared to the annihilation rate at a temperature where <span class="math notranslate nohighlight">\(m_{\rm X}c^2 = kT_{\rm X}\)</span>. Compute the temperature at which this happens for all of the standard model particles given their masses in the above image.</p>
+</div>
+<p><img alt="Standard model particles" src="_images/Standard_model.png" /></p>
+<figcaption><p>Standard model Table borrowed from arXiv:1609.04979.</p>
+</figcaption><p>For relativistic particles we have <span class="math notranslate nohighlight">\(P_{\rm X}=\epsilon_{\rm X}/3\)</span>. From the first law of thermodynamics, if you do not have any heat transfers, then <span class="math">\begin{eqnarray}
+0 &=& d(\epsilon_{\rm X}V) + P_{\rm X}dV\\
+&=& 3d(P_{\rm X}V) + P_{\rm X}dV \\
+\frac{dP_{\rm X}}{P_{\rm X}} &=& -\frac{4}{3} \frac{dV}{V}
+\end{eqnarray}</span> This implies that relativistic particles behave like a gas with <span class="math notranslate nohighlight">\(P_{\rm X}\propto V^{-4/3}\)</span>, a gas with adiabatic index <span class="math notranslate nohighlight">\(4/3\)</span>. Using <span class="math notranslate nohighlight">\(PV \propto T\)</span>, we obtain that the <span class="math notranslate nohighlight">\(T\propto V^{-1/3} \propto a^{-1}\)</span>.</p>
+<p>On the other hand, for non-relativistic particles with 3 degrees of freedom we have <span class="math notranslate nohighlight">\(\gamma=5/3\)</span>, thus their temperature will fall as <span class="math notranslate nohighlight">\(T\propto a^{-2}\)</span>.</p>
+</section>
+<section id="Effective-number-of-degrees-of-freedom-for-arbitrary-particles:">
+<h3>Effective number of degrees of freedom for arbitrary particles:<a class="headerlink" href="#Effective-number-of-degrees-of-freedom-for-arbitrary-particles:" title="Link to this heading"></a></h3>
+<p>For particles which are in between the two limits we discussed above, we have to carry out the full integrals for the number density. the pressure and the energy density. The simplest way to do these integrals is to substitute</p>
+<p><span class="math">\begin{eqnarray}
+{\cal E}=\frac{E}{k_{\rm B}T} \,\,\,\,\,\, {\cal M} = \frac{m_{\rm X}c^2}{kT}
+\end{eqnarray}</span></p>
+<p>Thus,</p>
+<p><span class="math">\begin{eqnarray}
+n_{\rm X} &=& \int_0^{\infty} f_{\rm X} dp \\
+&=& \int_0^{\infty} \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp\left( \frac{E_{\rm X}}{k_{\rm B}T}\right) \pm 1 \right]^{-1} dp \\
+&=& \int_0^{\infty} \frac{g_{\rm X}}{2\pi^2 \hslash^3} p^2 \left[ \exp {\cal E} \pm 1 \right]^{-1} dp \\
+&=& \frac{g_{\rm X}}{2\pi^2} \left(\frac{k_{\rm B}T}{\hslash c}\right)^3 \int_{\cal M}^{\infty} \frac{ \sqrt{{\cal E}^2-{\cal M}^2} {\cal E} d{\cal E}}{\exp {\cal E} \pm 1}\\
+&=& g^{*}_{n, {\rm X}} n^{\rm rel}_{\rm B}(g=1, T)
+\end{eqnarray}</span> where <span class="math">\begin{eqnarray}
+g^{*}_{n, {\rm X}} (T, M) = \frac{g_{\rm X}}{2\zeta(3)} \int_{\cal M}^{\infty} \frac{\sqrt{{\cal E}^2-{\cal M}^2}{\cal E} d{\cal E}}{\exp {\cal E} \pm 1}
+\end{eqnarray}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>Show that an equivalent expression for <span class="math notranslate nohighlight">\(g^*_{\epsilon, {\rm X}}\)</span> is given by</p>
+<p><span class="math">\begin{eqnarray}
+g^{*}_{\epsilon, {\rm X}} (T, M) = \frac{15 g_{\rm X}}{\pi^4} \int_{\cal M}^{\infty} \frac{ \sqrt{{\cal E}^2-{\cal M}^2} {\cal E}^2 d{\cal E}}{\exp {\cal E} \pm 1}
+\end{eqnarray}</span></p>
+<p>and for <span class="math notranslate nohighlight">\(g^*_{p, {\rm X}}\)</span> is given by</p>
+<p><span class="math">\begin{eqnarray}
+g^{*}_{p, {\rm X}} (T, M) = \frac{15 g_{\rm X}}{\pi^4} \int_{\cal M}^{\infty} \frac{ \left[{\cal E}^2-{\cal M}^2\right]^{3/2}  d{\cal E}}{\exp {\cal E} \pm 1}
+\end{eqnarray}</span></p>
+</div>
+<p><img alt="Effective degrees of freedom" src="_images/Effective_dof.png" /></p>
+<figcaption><p>Effective degrees of freedom per intrinsic degree of freedom. Figure borrowed from arXiv:1609.04979.</p>
+</figcaption><p>For the effective degrees of freedom for entropy density of a species, note that <span class="math">\begin{eqnarray}
+s_{\rm X} &=& \frac{\epsilon_{\rm X} + p_{\rm X}}{T} \\
+&=& \frac{g^{*}_{\epsilon, {\rm X}} \epsilon^{\rm rel}_{\rm B}(g=1, T) + g^{*}_{p, {\rm X}} p^{\rm rel}_{\rm B}(g=1, T)}{T}\\
+&=& \frac{p^{\rm rel}_{\rm B}(g=1, T)}{T} \left[3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}\right]\\
+&=& \frac{s^{\rm rel}_{\rm B}(g=1, T)}{4}\left[3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}\right] \\
+\end{eqnarray}</span> The first equality is the definition of the entropy, the second equality uses the effective degrees of freedom we calculated above for the energy density and pressure. The second equality uses <span class="math notranslate nohighlight">\(p^{\rm rel}=\epsilon^{\rm rel}/3\)</span>. The third equality relates the pressure and entropy of relativistic particles as we had calculated before. Using the definition <span class="math">\begin{eqnarray}
+s_{\rm X} &=& g^*_{s, {\rm X}} s^{\rm rel}_{\rm B}(g=1, T) \\
+\end{eqnarray}</span> This implies that <span class="math">\begin{eqnarray}
+g^*_{s, {\rm X}} = \frac{3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}}{4} \\
+\end{eqnarray}</span></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">zeta</span>
+
+<span class="k">class</span> <span class="nc">early_universe_particle</span><span class="p">:</span>
+
+    <span class="c1"># mass_in_GeV: (m_X c^2)/GeV</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mass_in_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mass_in_Gev</span> <span class="o">=</span> <span class="n">mass_in_GeV</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">boson</span> <span class="o">=</span> <span class="n">boson</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">zeta3</span> <span class="o">=</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="c1"># T_in_GeV: (k_B T)/GeV</span>
+    <span class="k">def</span> <span class="nf">effective_dof_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+        <span class="n">curlyM</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass_in_Gev</span><span class="o">/</span><span class="n">T_in_GeV</span>
+
+        <span class="c1"># Compute the number density effective degrees of freedom</span>
+        <span class="k">def</span> <span class="nf">dnx_integ</span><span class="p">(</span><span class="n">curlyE</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">boson</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">curlyE</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">curlyE</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">curlyM</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">curlyE</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">curlyE</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">curlyE</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">curlyM</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">curlyE</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">res</span><span class="p">,</span> <span class="n">err</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">dnx_integ</span><span class="p">,</span> <span class="n">curlyM</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">res</span><span class="o">/</span><span class="mf">2.</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">zeta3</span>
+
+
+    <span class="c1"># Write code for the following functions:</span>
+    <span class="k">def</span> <span class="nf">effective_dof_eps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+
+        <span class="c1"># Write code to compute the entropy density effective degrees of freedom</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">def</span> <span class="nf">effective_dof_s</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+
+        <span class="c1"># Write code to compute the entropy density effective degrees of freedom</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">boson_mass_GeV</span> <span class="o">=</span> <span class="mf">173.0</span>
+<span class="n">boson</span> <span class="o">=</span> <span class="n">early_universe_particle</span><span class="p">(</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">fermion</span> <span class="o">=</span> <span class="n">early_universe_particle</span><span class="p">(</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">Temperature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span><span class="o">*</span><span class="n">boson_mass_GeV</span>
+<span class="n">gstar_n_boson</span> <span class="o">=</span> <span class="n">Temperature</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="n">gstar_n_fermion</span> <span class="o">=</span> <span class="n">Temperature</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="c1">#gstar_eps_boson = Temperature*0.0</span>
+<span class="c1">#gstar_eps_fermion = Temperature*0.0</span>
+<span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">gstar_n_boson</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+    <span class="n">gstar_n_boson</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">boson</span><span class="o">.</span><span class="n">effective_dof_n</span><span class="p">(</span><span class="n">Temperature</span><span class="p">[</span><span class="n">ii</span><span class="p">])</span>
+    <span class="n">gstar_n_fermion</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">fermion</span><span class="o">.</span><span class="n">effective_dof_n</span><span class="p">(</span><span class="n">Temperature</span><span class="p">[</span><span class="n">ii</span><span class="p">])</span>
+
+    <span class="c1">#gstar_eps_boson[ii] = boson.effective_dof_eps(Temperature[ii])</span>
+    <span class="c1">#gstar_eps_fermion[ii] = fermion.effective_dof_eps(Temperature[ii])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/tmp/ipykernel_49068/1348046578.py:19: RuntimeWarning: overflow encountered in exp
+  return curlyE*np.sqrt(curlyE**2-curlyM**2)/(np.exp(curlyE)-1)
+/tmp/ipykernel_49068/1348046578.py:21: RuntimeWarning: overflow encountered in exp
+  return curlyE*np.sqrt(curlyE**2-curlyM**2)/(np.exp(curlyE)+1)
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">boson</span><span class="o">.</span><span class="n">effective_dof_n</span><span class="p">(</span><span class="mf">173.0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">boson</span><span class="o">.</span><span class="n">effective_dof_eps</span><span class="p">(</span><span class="mf">173.0</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.739577680156012
+0
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+/tmp/ipykernel_49068/1348046578.py:19: RuntimeWarning: overflow encountered in exp
+  return curlyE*np.sqrt(curlyE**2-curlyM**2)/(np.exp(curlyE)-1)
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">pl</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Temperature</span><span class="o">/</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">gstar_n_boson</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Temperature</span><span class="o">/</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">gstar_n_fermion</span><span class="p">)</span>
+<span class="c1">#ax.plot(Temperature/higgs_mass_GeV, gstar_eps_boson)</span>
+<span class="c1">#ax.plot(Temperature/higgs_mass_GeV, gstar_eps_fermion)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="c1">#ax.set_yscale(&quot;log&quot;)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\frac{k_{\rm B}T}{m_{\rm X}c^2}$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">3.</span><span class="o">/</span><span class="mf">4.</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(10, 0.1)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Early_Universe_7_1.png" src="_images/Early_Universe_7_1.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now plot on log scale</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Temperature</span><span class="o">/</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">gstar_n_boson</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Temperature</span><span class="o">/</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">gstar_n_fermion</span><span class="p">)</span>
+<span class="c1">#ax.plot(Temperature/higgs_mass_GeV, gstar_eps_boson)</span>
+<span class="c1">#ax.plot(Temperature/higgs_mass_GeV, gstar_eps_fermion)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\frac{k_{\rm B}T}{m_{\rm X}c^2}$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">3.</span><span class="o">/</span><span class="mf">4.</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+(10, 0.1)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/Early_Universe_8_1.png" src="_images/Early_Universe_8_1.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="Total-effective-degrees-of-freedom">
+<h2>Total effective degrees of freedom<a class="headerlink" href="#Total-effective-degrees-of-freedom" title="Link to this heading"></a></h2>
+<p>Depending upon the temperature of the Universe we can compute the total effective degrees of freedom in all relativistic species and write down the relationship between the energy density of radiation which is driving the expansion and the temperature. For example, at very very high temperatures when all the standard model particles are relativistic, and are present in equilibrium quantities, we have 90 fermionic degrees of freedom and 28 bosonic degrees of freedom. For number densities, we have
+<span class="math notranslate nohighlight">\(28 + 3/4\times 90 = 95.5\)</span> effective degrees of freedom, for energy densities, pressures, and entropy that number is <span class="math notranslate nohighlight">\(28 + 7/8\times 90=106.75\)</span>. That allows us to write the relations between the energy density versus temperature. As the temperature drops several particles start to annihilate, depending upon the masses of the different standard model particles. Thus their number densities will start to change as the temperature. These changes happen at specific temperatures in the
+Universe corresponding to the masses of the standard model particles.</p>
+<p><img alt="Change in degrees of freedom" src="_images/Change_dof.png" /></p>
+<figcaption><p>Change in the total effective degrees of freedom at different junctures. Table borrowed from arXiv:1609.04979.</p>
+</figcaption></section>
+<section id="Particle-freeze-out">
+<h2>Particle freeze out<a class="headerlink" href="#Particle-freeze-out" title="Link to this heading"></a></h2>
+<p>If you have different species in the Universe, depending upon their masses they will go between these relativistic and non-relativistic limits. Importantly once the temperature of the Universe drops below <span class="math notranslate nohighlight">\(m_{\rm X}c^2/k_{\rm B}\)</span>, the abundance, and the related quantities quickly undergo an exponential drop. In the radiation dominated era, the expansion of the Universe is controlled by the species that are relativistic. Once they become non-relativistic their relevance becomes less to the
+expansion of the Universe in the radiation dominated era. This continues until the particles remain in thermal equilibrium, and the creation and annihiliation reactions can still happen against the backdrop of an expanding Universe. Once the expansion time scale of the Universe becomes smaller compared to the annihilation rates, the abundance of particles gets frozen in, and they just fall off as <span class="math notranslate nohighlight">\(a^{-3}\)</span>.</p>
+<p>At early times, we can safely ignore any curvature, <span class="math notranslate nohighlight">\(\Lambda\)</span> and matter terms, and thus <span class="math">\begin{equation}
+\frac{\dot{a}}{a} = \left[\frac{8\pi G\rho}{3}\right]^{1/2}
+\end{equation}</span> The expansion time scale is then given by <span class="math">\begin{equation}
+t_{\rm exp} = \frac{a}{\dot{a}} \propto \left[ G \rho \right]^{-1/2} \propto a^2
+\end{equation}</span> In the radiation dominated era, <span class="math notranslate nohighlight">\(\rho \propto a^{-4}\)</span>, and thus <span class="math notranslate nohighlight">\(t_{\rm exp}\propto a^2\)</span>. The expansion time scale thus increases rapidly.</p>
+<p>Thermal equilibrium can be maintained mainly by two body interactions <span class="math">\begin{equation}
+\frac{dN}{dt} = n \langle \sigma v \rangle \propto n \propto T^{3} \propto a^{-3}
+\end{equation}</span> The collision time scales are thus increasing as <span class="math">\begin{equation}
+\Gamma = \left[\frac{dN}{dt}\right]^{-1} \propto a^{3}
+\end{equation}</span> Thus at early times the particles are in thermal equilibrium but they will quickly fall out of the equilibrium once the expansion time scale becomes shorter than the collision time scale. Depending upon when this happens the particle abundances freeze out while they are relativistic or non-relativistic. Once that happens, the energy density of matter particles just goes down as <span class="math notranslate nohighlight">\(a^{-3}\)</span>.</p>
+<p>Let us consider the case of neutrinos which are kept in thermal equilibrium via the weak interaction between positrons and electrons (which are in turn coupled to the photons). The interaction rate is given by (see the Particle Data group tables for <span class="math notranslate nohighlight">\(G_{\rm weak}\)</span>,</p>
+<p><span class="math">\begin{equation}
+\Gamma = n_{\rm e}\sigma_{\rm weak} c \approx \left(\frac{k_{\rm B}T}{\hslash c}\right)^3 (\hslash c G_{\rm weak} k_{\rm B}T)^2
+\end{equation}</span> Here we have used the temperature dependence of the weak interactions. The Hubble expansion rate is given by the Friedmann equation <span class="math">\begin{equation}
+H = \left(\frac{8\pi G}{3c^2}\epsilon\right)^{1/2} = \left(\frac{8\pi G}{3c^2}g^*_\epsilon \frac{\pi^2}{30} \frac{(k_{\rm B}T)^4}{(\hslash c)^3}\right)^{1/2}
+\end{equation}</span></p>
+<p>The interaction rate and the expansion rate become equal when</p>
+<p><span class="math">\begin{equation}
+\frac{\Gamma}{H} \approx 1 \rightarrow \frac{T}{10^{10} K} \approx \frac{k_{\rm B}T}{\rm 800\, keV}
+\end{equation}</span></p>
+<p>At these temperature neutrinos start to decouple from the rest of the electron positron photon plasma. They remain relativistic at these energies and thus their temperatures continue to drop as <span class="math notranslate nohighlight">\(1/a\)</span>.</p>
+<p>The radiation energy density keeps falling off as <span class="math notranslate nohighlight">\(a^{-4}\)</span>, and thus eventually matter becomes important in driving the expansion of the Universe.</p>
+</section>
+<section id="Temperature-of-a-decoupled-relativistic-species">
+<h2>Temperature of a decoupled relativistic species<a class="headerlink" href="#Temperature-of-a-decoupled-relativistic-species" title="Link to this heading"></a></h2>
+<p>We have seen that the total entropy <span class="math notranslate nohighlight">\(a^3s(T)\)</span> in the Universe stays constant. However the entropy density <span class="math notranslate nohighlight">\(s(T) \propto g^{*}_{s}T^3\)</span>. Thus we obtain that <span class="math notranslate nohighlight">\(g^*_{s}a^3 T^3 =\)</span> constant. When the effective degrees of freedom goes down the temperature will decrease at a slower fashion than it would normally do due to expansion.</p>
+<p>This can be understood in the following fashion: at high temperatures particles and antiparticles annihilate and dump energy into the radiation (or lower mass particles). However the particle pair production process causes the opposite to happen and an equilibrium is maintained. However as the temperature falls, the pair production gets affected. Pair annihilations continue to dump energy in to the relativistic sector. This is the reason why the temperature drop become slower during the time
+when pair annihilation processes take place.</p>
+</section>
+<section id="Cosmic-Neutrino-background">
+<h2>Cosmic Neutrino background<a class="headerlink" href="#Cosmic-Neutrino-background" title="Link to this heading"></a></h2>
+<p>Let us consider a particle species like neutrino which decouples when it is relativistic. It happens when the temperature drops below <span class="math notranslate nohighlight">\(800\)</span> keV. In this case it has its own temperature (which continues to decrease as <span class="math notranslate nohighlight">\(1/a\)</span>. This temperature is the same as the rest of the particles (electrons, positrons and photons) even after the neutrinos have decoupled (just because both the temperatures continue to fall at the same rate). However, at temperatures close to <span class="math notranslate nohighlight">\(511\)</span> keV, the
+electron-positron pair annihilations start to take place. This will cause the temperature of the photons to drop slower than the usual <span class="math notranslate nohighlight">\(1/a\)</span> as the electron-positron pair starts to annihilate and dump the energy in to photons. The temperature of the photons thus rises compared to that of the neutrinos.</p>
+<p>Let us write down the temperature for photon, electron, positron plasma to be <span class="math notranslate nohighlight">\(T_{\gamma,1}\)</span> before the annihilation, and <span class="math notranslate nohighlight">\(T_{\gamma, 2}\)</span> after the annihilation. The effective degrees of freedom of the electron, positron, photon plasma before is <span class="math notranslate nohighlight">\(g^*_{s, \gamma, 1}=2\times7/8+2\times7/8+2=5.5\)</span>. and after the annihilation is <span class="math notranslate nohighlight">\(g^*_{s, \gamma, 2}=2\)</span>. As we discussed before <span class="math notranslate nohighlight">\(T_{\gamma,1} = T_{\nu, 1}\)</span>. The effective degrees of freedom in neutrino sector remain the same.
+Let <span class="math notranslate nohighlight">\(T_{\nu, 2}\)</span> be the effective temperature of the neutrino species after the electron positron annihilation. The entropy conservation will imply that,</p>
+<p><span class="math">\begin{eqnarray}
+T_{\gamma, 1}^3 g^{*}_{s, \gamma,1}a_1^3 &=& T_{\gamma, 2}^3 g^{*}_{s, \gamma,2}a_2^3 \\
+T_{\nu , 1}^3 a_1^3 &=& T_{\nu, 2}^3 a_2^3
+\end{eqnarray}</span></p>
+<p>Dividing one by the other we obtain</p>
+<p><span class="math">\begin{equation}
+T_{\gamma, 2} = T_{\nu}\left[ \frac{ g^{*}_{s, \gamma,1}}{ g^{*}_{s, \gamma,2}} \right]^{1/3} = \left[\frac{11}{4}\right]^{1/3} T_{\nu, 2}
+\end{equation}</span></p>
+<p>Thus the temperature of the neutrino background is expected to be smaller compared to the temperature of the photon background today.</p>
+</section>
+<section id="Nucleosynthesis">
+<h2>Nucleosynthesis<a class="headerlink" href="#Nucleosynthesis" title="Link to this heading"></a></h2>
+<p>Next we will jump back to a time after the QCD transition phase after which the Quark gluon plasma has transformed into a hadron gas plasma. Teh quarks are now bound in neutrons and protons. And these species remain in thermal equilibrium via the weak interactions until these weak interactions freeeze out at about <span class="math notranslate nohighlight">\(800\)</span> keV (1 second after the big bang).</p>
+<p><span class="math">\begin{equation}
+n + \nu_e \leftrightarrow p + e^{-}
+\end{equation}</span></p>
+<p>Given the masses of the neutrons and protons, they are expected to be non-relativistic at these temperatures, thus we can use the formulae for the number density of non-relativistic species to obtain</p>
+<p><span class="math">\begin{equation}
+\frac{n_n}{n_p} = \exp\left( -\frac{\Delta m c^2}{k_{\rm B}T} \right) \approx \frac{1}{6}
+\end{equation}</span></p>
+<p>The mass difference <span class="math notranslate nohighlight">\(\Delta m c^2 = 1.4\)</span> MeV. At higher temperatures the fractions will be close to unity. However at the temperature when the weak interactions freeze out, this ratio is close to 1/6.</p>
+<p>The neutrons and protons can also interact among themselves to form deuterium via the reaction <span class="math">\begin{equation}
+n + p \leftrightarrow \left.^2H\right.
+\end{equation}</span> These reactions are again governed by the Saha equation and similar to the recombination of electrons and protons that we studied, the formation of deuterium is delayed by the high number density of photons. Instead of forming at a temperature corresponding to the binding energy of deuterium <span class="math notranslate nohighlight">\(\approx 2\)</span> MeV, the formation is delayed to <span class="math notranslate nohighlight">\(\approx 80\)</span> keV, which happens about 100s after the big bang.</p>
+<p>During this time, the neutrons decay into protons with a half life time of 880 seconds. Thus the neutron to proton number density ratio will change further to <span class="math">\begin{equation}
+\frac{n_n}{n_p} \approx \frac{1}{6}\exp\left( - \frac{100}{886.0} \right) \approx \frac{1}{7}
+\end{equation}</span> After <span class="math notranslate nohighlight">\(80\)</span> keV, the neutrons start to be rapidly captured by protons to form deuterium which in turn form Helium nuclei, and thus the only remaining hydorgen atoms in the Universe correspond to the protons which are not able to find the neutrons. The total mass density of the matter will then be proportional to <span class="math notranslate nohighlight">\(n_{\rm n} + n_{\rm p}\)</span>, while the mass in hydrogen will be <span class="math notranslate nohighlight">\(n_{\rm p} - n_{\rm n}\)</span>. The fraction of helium by mass will then be given by
+<span class="math">\begin{equation}
+Y_{\rm p} = 1 - X_{\rm p} = 1 - \frac{n_{\rm p} - n _{\rm n}} {n_{\rm n} + n_{\rm p}} \approx \frac{1}{4}
+\end{equation}</span> where we have used <span class="math notranslate nohighlight">\(n_{\rm n}/n_{\rm p} \approx 1/7\)</span> in the last approximation.</p>
+<p>The chain of fusion processes are <span class="math">\begin{eqnarray}
+n + p \leftrightarrow H^2\\
+H^2 + H^2 \leftrightarrow H^3 + n\\
+He^3 + H^2 \leftrightarrow He^4 + p\\
+H^2 + H^2 \leftrightarrow H^3 + p\\
+He^4 + H^3 \leftrightarrow Li^7 + \gamma \\
+\end{eqnarray}</span></p>
+<p>Detailed nuclear reaction rate tables can be used to determine the abundances of these light elements and their ratios with one another. These can then be constrained using observations.</p>
+</section>
+<section id="Cosmic-microwave-background">
+<h2>Cosmic microwave background<a class="headerlink" href="#Cosmic-microwave-background" title="Link to this heading"></a></h2>
+<p>As the Universe cools, electrons and protons are in equilibrium with the photon bath via the reaction</p>
+<p><span class="math">\begin{equation}
+e^- + p^+ \leftrightarrow H + \gamma
+\end{equation}</span></p>
+<p>The equation which governs the number densities of the different <span class="math notranslate nohighlight">\(H\)</span> atom compared to the <span class="math notranslate nohighlight">\(e^-\)</span> and <span class="math notranslate nohighlight">\(p^+\)</span> is the Saha equation which describes the equilbrium number densities</p>
+<p><span class="math">\begin{equation}
+\frac{n_{p}n_{e}}{n_{\rm H}} = \frac{(2\pi m_{\rm e} k_{\rm B}T)^{3/2}}{h^3} \exp\left(-\frac{\chi}{k_{\rm B}T} \right)
+\end{equation}</span> Here, <span class="math notranslate nohighlight">\(\chi=(m_e + m_p - m_H)c^2 = 13.6\)</span> eV. The total number of baryons must be conserved, thus <span class="math notranslate nohighlight">\(n_B = n_H + n_p\)</span>, and given that we should maintain neutrality we obtain <span class="math notranslate nohighlight">\(n_e=n_p\)</span>. Define <span class="math notranslate nohighlight">\(x=n_e/n_B\)</span>, then <span class="math notranslate nohighlight">\(n_H/n_B=1-x\)</span>, and we get <span class="math">\begin{equation}
+\frac{x^2}{1-x} = \frac{(2\pi m_{\rm e} k_{\rm B}T)^{3/2}}{h^3n_{\rm B}} \exp\left(-\frac{\chi}{k_{\rm B}T} \right)
+\end{equation}</span> We can use <span class="math notranslate nohighlight">\(n_{\rm B} = \eta n_{\gamma}\)</span> to obtain <span class="math">\begin{eqnarray}
+\frac{x^2}{1-x} &=& \frac{(2\pi m_{\rm e} k_{\rm B}T)^{3/2}}{h^3n_{\gamma}\eta} \exp\left(-\frac{\chi}{k_{\rm B}T} \right) \\
+&=& \frac{(2\pi m_{\rm e} k_{\rm B}T)^{3/2}}{h^3 2\frac{\zeta(3)}{\pi^2} \left(\frac{k_{\rm B}T}{\hslash c}\right)^3  \eta} \exp\left(-\frac{\chi}{k_{\rm B}T} \right) \\
+&\approx& \frac{0.26}{\eta} \left(\frac{m_e c^2}{k_{\rm B}T}\right)^{3/2}\exp\left( -\frac{\chi}{k_{\rm B}T}\right)
+\end{eqnarray}</span></p>
+<p>The value of <span class="math notranslate nohighlight">\(\eta\)</span> can be estimated today to be <span class="math notranslate nohighlight">\(10^{-9}\)</span>. To obtain a value of <span class="math notranslate nohighlight">\(x \approx 0.1\)</span>, we require <span class="math notranslate nohighlight">\(T\sim 3000\)</span> K. If we had naively estimated the temperature based on <span class="math notranslate nohighlight">\(\chi=13.6\)</span> eV, this would give a value close to <span class="math notranslate nohighlight">\(10^5\)</span> K instead. The reason why this recombination happens at a lower temperature is related to the small value of the baryon to photon ratio.</p>
+<p>Until the Universe remains ionised, the photon free path is very small. Once the photon temperature drops to <span class="math notranslate nohighlight">\(T&lt;3500\)</span> K, the photons are no longer energetic enough to ionise the hydrogen atoms, and they start to free stream. These photons that started free streaming after the recombination of the electrons with the protons can be observed today in the microwave at a temperature of <span class="math notranslate nohighlight">\(T=2.726\)</span> K. This is the cosmic microwave background radiation.</p>
+<section id="Cosmological-parameters-from-the-cosmic-microwave-background">
+<h3>Cosmological parameters from the cosmic microwave background<a class="headerlink" href="#Cosmological-parameters-from-the-cosmic-microwave-background" title="Link to this heading"></a></h3>
+<p>The cosmic microwave background was discovered by Arnos Penzias and Robert Wilson in 1965, work for which they received the Nobel Prize in Physics. This is a remarkable achievement, the existence of this relic radiation from the Universe’s hot past was predicted by Gamow and colleagues even before it was observed (there was a large uncertainty about the exact temperature though). There was a huge experimental effort to detect fluctuations in the CMB, but to no avail. Without fluctuations you
+cannot form all the structure that we see in the Universe today. This non-existence of detectable fluctuations remained a conundrum for a few decades before observational progress made it possible to observe the fluctuations.</p>
+<p>The energy spectrum of the cosmic microwave background radiation was measured by the COBE satellite in 1990s. The spectrum is shown below along with a fit to a black body spectrum. The figure does not have any visible errorbars because the errors are smaller than the thickness of the line!</p>
+<img alt="CMB spectrum" src="_images/CMBspectrum.png" />
+<p>Armed with these measurements, the COBe team was able to make a detailed map of the fluctuations in the cosmic microwave background. The figure below shows the temperature measurement in the top plot as a function of position on the sky, the middle panel shows the residual after removing the monopole component, and shows the dominant dipole fluctuation due to the motion of galaxy with respect to the CMB frame/ The bottom panel shows the residual fluctuations after both the monopole and dipole
+are subtracted out.</p>
+<img alt="CMB temperature anisotropies" src="https://aether.lbl.gov/www/projects/cobe/COBE_Home/m_d_53s_1111.gif" />
+<p>First notice the degree to which the CMB is isotropic, the temperature scale is in Kelvin in the top panel, millikelvin in the middle panel and microkelvin in the bottom. The CMB fluctuations are extremely tiny of the order <span class="math notranslate nohighlight">\(10^{-5}\)</span> of the monopole. These fluctuations are our earliest look at the fluctuations which caused the formation of structure in the Universe.</p>
+<p>These fluctuations tell us a lot of information about the Universe. We will make an attempt to understand the most basic information given by the fluctuations of the CMB. As we have seen before, the CMB is relic radiation belonging to an era when the baryons and photons were tightly coupled with each other. As the temperature dropped the electrons could no longer be ionized from hydrogen atoms, and the photons started to stream freely.</p>
+<p>Let us try to understand how big would be the typical size of a fluctuation in the CMB. To understand this we need to understand how fluctuations behave in the baryon photon plasma. Recall that the pressure and density of relativistic photons are related as <span class="math notranslate nohighlight">\(p = \rho c^2/3\)</span>. Thus the speed of any pressure density fluctuations in photons and any matter coupled with radiation will be close to <span class="math notranslate nohighlight">\(c_{\rm s}^2 = dp/d\rho \approx c/3\)</span>. There are small corrections to this equation due to the
+non-zero fraction of baryon to photon energy density, but let us neglect it for the moment. Any pressure-density perturbations in the plasma will propagate with the sound speed in the plasma. These fluctuations will begin to travel from the moment they were created to the moment the baryons lose their coupling with the photons (which happens at recombination).</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ol class="arabic simple">
+<li><p>Use <span class="math notranslate nohighlight">\(\Omega_{\rm m}=0.3\)</span> and <span class="math notranslate nohighlight">\(\Omega_{\rm r}=8\times 10^{-5}\)</span> to figure out the scale factor of the epoch at matter radiation equality. Compute the temperature of the Universe at the epoch of matter radiation equality if the temperature of the Universe today is <span class="math notranslate nohighlight">\(2.726 K\)</span>. Compare this temperature to the temperature at which CMB is released.</p></li>
+</ol>
+</div>
+<p>If we have a drum and we excite it with different frequencies we can see different modes of the fluctuations of the surface of a drum:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">&quot;v4ELxKKT5Rw&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<iframe
+    width="800"
+    height="300"
+    src="https://www.youtube.com/embed/v4ELxKKT5Rw"
+    frameborder="0"
+    allowfullscreen
+></iframe></div>
+</div>
+<p>When you beat a drum you excite all these different modes.</p>
+<p>Similarly density perturbations travel in the early Universe and we can carry out a fluctuation analysis in terms of the modes. These modes are observed as projected on to the sky. We can compute the two point correlation function of the temperature fluctuations in the CMB as a function of separation between these scales <span class="math notranslate nohighlight">\(\theta\)</span>. Consider two direction <span class="math notranslate nohighlight">\(\hat{n}\)</span> and <span class="math notranslate nohighlight">\(\hat{n}'\)</span> with <span class="math notranslate nohighlight">\(\hat{n}.\hat{n}' = \cos\theta\)</span>. Then we can compute <span class="math">\begin{equation}
+C(\theta) = \langle \Delta T(\hat{n}) \Delta T(\hat{n}') \rangle_{\hat{n}.\hat{n}' = \cos\theta}
+\end{equation}</span> This correlation function can be decomposed in to modes by taking a spherical harmonic transform (this is like an angular decomposition of modes rather than a Fourier decomposition) to obtain the power spectrum <span class="math notranslate nohighlight">\(C_{\rm l}\)</span>. <span class="math">\begin{equation}
+C(\theta) = \sum_l \frac{2l+1}{4\pi} C_l P_l \cos(\theta)
+\end{equation}</span> Each Legenedre polynomial is an oscillating function where the oscillation increase as <span class="math notranslate nohighlight">\(l\)</span> increases. The characteristic scale of each oscillation is inversely proportional to <span class="math notranslate nohighlight">\(l\)</span>. The temperature fluctuation power spectrum looks like the one shown below:</p>
+<p><img alt="CMB fluctuation power spectrum" src="http://background.uchicago.edu/~whu/SciAm/power2.jpg" /></p>
+<figcaption><p>Figure borrowed from Hu and White (Sci Am 290N2 44 (2004) ).</p>
+</figcaption><p>We can see that we have power at different angular frequencies in the CMB power spectrum, we can detect a clear first peak, and then a series of overtones.</p>
+<p>The first peak corresponds to the fundamental mode where fluctuations start at the maximum at the beginning of the Universe and reach the minimum at decoupling (or vice versa). The wavelength of this mode will equal the distance sound waves can travel from the beginning of time to the epoch of decoupling. We know the speed of sound in the baryon photon plasma and we can use this to compute the sound horizon at recombination.</p>
+<p><span class="math">\begin{equation}
+r_{\rm s}^* \approx \int_{0}^{t_{\rm rec}} \frac{c}{\sqrt{3}} dt
+\end{equation}</span></p>
+<p>We can change variables to the scale factor <span class="math notranslate nohighlight">\(a\)</span> with the help of the Friedmann equation. Remember a large fraction of the time between the beginning of the Universe and the decoupling will be dominated by the matter dominated epoch. Thus we can use the simplified Friedmann equation to compute the sound horizon at recombination <span class="math">\begin{eqnarray}
+r_s^{*} &\approx& \frac{c}{\sqrt{3}} \int_{0}^{a_*} \frac{a}{\dot{a}} \frac{da}{a} \\
+&=& \frac{c}{H_0\sqrt{3\Omega_{\rm m}}} \int_{0}^{a_*} a^{1/2} da \\
+&=& \frac{2c}{3H_0\sqrt{3\Omega_{\rm m}}} a^{3/2}
+\end{eqnarray}</span></p>
+<p>This is a physical scale in the Universe, we observe the fundamental mode at a particular angular scale when we measure the temperature fluctuations. The two are related by the angular diameter distance, computed between us and the surface of last scattering. This angular diameter distance is dependent on the cosmological constituents of the Universe which dominate the energy density budget of the Universe after recombination. These will thus include the matter density parameter, curvature and
+the dark energy density. Thus the angle</p>
+<p><span class="math">\begin{equation}
+\theta_s^* = \frac{r_s^*}{D_{\rm ang}(a_*)}
+\end{equation}</span></p>
+<p>is a physical observable which depends on the cosmological parameters. And we can use the measurements to constrain cosmological parameters. It can be shown that the primary sensitivity of this angle <span class="math notranslate nohighlight">\(\theta_*\)</span> is to the curvature of the Universe. In particular, by varying cosmological parameters one can show that <span class="math">\begin{equation}
+l_{\rm first peak} \approx \frac{200}{\sqrt{1-\Omega_{\rm k}}}
+\end{equation}</span></p>
+<p>These peaks have been measured pretty precisely now. The first peak is at degree scales, and is the biggest hint that the Universe is very close to having a flat geometry.</p>
+<p><img alt="CMB power spectrum from Planck" src="https://cdn.sci.esa.int/documents/34222/35279/1567216755608-Planck_power_spectrum_625.jpg" /></p>
+<figcaption><p>Figure borrowed from the Planck website, please take a look at the URL of the image for reference.</p>
+</figcaption><p>The relative height of the second peak compared to the first tells us about the baryon density of the Universe, while the relative height of the third peak tells us about the dark matter density in the Universe, a mysterious component of the Universe which we understand very little about. Given the accuracy with which the peaks have been measured, the cosmic microwave background helps us understand the constituents of the early Universe with very high precision and accuracy.</p>
+<p><img alt="CMB composition of the Universe" src="http://3.bp.blogspot.com/-t6_ObB64iRE/UpovdckqJ2I/AAAAAAAACnE/VfrqazdZphA/s1600/425px-080998_Universe_Content_240_after_Planck.jpg" /></p>
+<figcaption><p>Figure borrowed from the Planck collaboration</p>
+</figcaption><div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>Show that the ratio of the energy density of photons to that of neutrinos at decoupling is <span class="math notranslate nohighlight">\(\approx 1.5\)</span>. You can use that the temperature of the neutrinos compared to the temperature of photons is <span class="math notranslate nohighlight">\([4/11]^{1/3}\)</span> as derived earlier. Use the number of degrees of freedom for each species, and the expressions of energy density for relativistic particles.</p>
+</div>
+</section>
+<section id="Reference-material-for-reading-about-the-cosmic-microwave-background:">
+<h3>Reference material for reading about the cosmic microwave background:<a class="headerlink" href="#Reference-material-for-reading-about-the-cosmic-microwave-background:" title="Link to this heading"></a></h3>
+<p>Excellent material can be found on Wayne Hu’s CMB tutorial page: <a class="reference external" href="http://background.uchicago.edu/~whu/beginners/introduction.html">Beginner level introduction</a> followed by <a class="reference external" href="http://background.uchicago.edu/~whu/intermediate/intermediate.html">Intermediate level</a> and a review article in <a class="reference external" href="http://background.uchicago.edu/~whu/SciAm/sym1.html">Scientific American</a> .</p>
+</section>
+</section>
+<section id="Problems-with-the-standard-cosmological-model">
+<h2>Problems with the standard cosmological model<a class="headerlink" href="#Problems-with-the-standard-cosmological-model" title="Link to this heading"></a></h2>
+<section id="Flatness-problem">
+<h3>Flatness problem<a class="headerlink" href="#Flatness-problem" title="Link to this heading"></a></h3>
+<p>The geometry of the Universe as observed today is pretty close to flat. To observe that this is quite a coincidence, note that today the densities in the Universe have to be finely tuned such that the difference between the sum of the matter density, the dark energy density and the radiation energy density (let us call this sum <span class="math notranslate nohighlight">\(\rho\)</span>) is equal to the critical density within less than a percent. The Friedmann equation can be recast as <span class="math">\begin{align}
+\frac{3 kc^2 }{8\pi G \rho(a) a^2} &= \frac{\rho(a)-\rho_{\rm c}(a)}{\rho(a)}
+\end{align}</span> where <span class="math notranslate nohighlight">\(\rho\)</span> is the total energy density of the Universe.</p>
+<p>In the matter dominated era, the density goes as <span class="math notranslate nohighlight">\(\rho \propto a^{-3}\)</span>, and so the left hand side will grow as <span class="math notranslate nohighlight">\(a\)</span>, while in the radiation dominated era, the density goes as <span class="math notranslate nohighlight">\(\rho \propto a^{-4}\)</span>, and the difference in the density compared to critical will grow as <span class="math notranslate nohighlight">\(a^2\)</span>. This implies that the total energy density of the Universe will have to be incredibly fine tuned in the very early Universe to be close to critical if it has to be equal to the critical density within a
+percent today.</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>– We know from observations that the Universe has a density which is within one percent of the critical density today. Compute how close to the critical density the Universe needs to be when it was 50000 years old, assuming that the Universe is entirely matter dominated from then to today. Use the relation between the scale factor and time in the matter dominated era.</p>
+<p>– The Universe is radiation dominated prior to that time, compute how close the energy density have to be when extrapolated to 1 s after the big bang.</p>
+</div>
+<p>This is called the flatness problem.</p>
+</section>
+<section id="Horizon-problem">
+<h3>Horizon problem<a class="headerlink" href="#Horizon-problem" title="Link to this heading"></a></h3>
+<p>Consider cosmic microwave background photons arriving from opposite direction in the sky. These photons are just arriving today at our location. So the regions which emitted these photons should not have been in causal contact with each other in the very early Universe. Given this it is difficult to understand how these photons manage to have the same temperature to 1 part in 100000?</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>– Compute the comoving distance to the horizon at the time the cosmic microwave background photons were released. Most of the time spent in the early Universe is in the matter dominated era. The CMB photons were released about 480000 years after the big bang. Hint: Use the formula for the scale factor as a function of time in matter dominated era and the definition of the comoving horizon distance.</p>
+<p>– Compare this distance to the distance between two points which released the CMB photons which reached today to us from opposite directions.</p>
+</div>
+<p>The large difference between these two distances is known as the horizon problem.</p>
+</section>
+</section>
+<section id="Inflation-as-a-solution">
+<h2>Inflation as a solution<a class="headerlink" href="#Inflation-as-a-solution" title="Link to this heading"></a></h2>
+<p>An epoch of an exponential expansion in the early Universe has been invoked as a solution to these problems. The comoving horizon distance in a Universe which undergoes an exponential expansion, is given by</p>
+<p><span class="math">\begin{align}
+\chi &= \int_{0}^t c \frac{dt}{a(t)} \\
+&= \int_{0}^{t} e^{-H_0 t} c dt\\
+&= \frac{c}{H_0} \left[1 - e^{-H_0 t}\right]
+\end{align}</span> The exponential will die down fairly quickly if inflation lasts many e-folds. The comoving horizon thus does not grow significantly during periods of exponential expansion. However the physical distances grow exponentially. Thus distances which are in causal contact, can be stretched to distances larger than the comoving horizon during the period of inflation. Inflation thus solves the horizon problem, by positing that the entire observable Universe was once part of a causal patch,
+which grew exponentially during the early inflationary epoch.</p>
+<p>Inflation can also solve the fine tuning problem. Note that during inflationary epoch the energy density will stay constant. Thus the quantity <span class="math notranslate nohighlight">\(\delta\rho/\rho\)</span> where <span class="math notranslate nohighlight">\(\delta\rho\)</span> is the difference between the critical density and the density of the Universe can decay exponentially. Inflation drives the Universe towards the critical density.</p>
+<p>Inflation also is able to provide a solution to the non-existence of magnetic monopoles (such monopoles are regular features in quantum theories of the early Universe). Such monopoles get diluted exponentially during the inflationary epoch.</p>
+<p>More importantly inflation also provides an explanation for the seeds of structure formation. The quantum fluctuations in the early Universe can get stretched to scales beyond the horizon during inflation and result in structure formation.</p>
+<p>Inflation is posited to happen due to a scalar field called the inflaton which exists in the early Universe. The inflaton field has an energy density and pressure which can be computed by starting from an action. <span class="math">\begin{align}
+\rho &= \frac{1}{2}\dot{\phi}^2 + V(\phi) \\
+p &= \frac{1}{2}\dot{\phi}^2 - V(\phi)
+\end{align}</span> where <span class="math notranslate nohighlight">\(V(\phi)\)</span> is the potential which governs the dynamics of the inflaton field. The field is homogeneous in the Universe, but is expected to have quantum fluctuations at different locations in the Universe. If the field is static or rolling slowly (<span class="math notranslate nohighlight">\(\dot{\phi}^2&lt;&lt; 2 V(\phi)\)</span>), then we get an equation of state <span class="math notranslate nohighlight">\(p=-\rho\)</span>. We have previously seen that this corresponds to an exponential expansion of the scale factor.</p>
+<p>There are different potentials which have been proposed, but most inflationary models these days will show a potential which has a false vacuum at <span class="math notranslate nohighlight">\(\phi=0\)</span> with a finite <span class="math notranslate nohighlight">\(V(0)\)</span>. This potential drives the inflation as the field rolls slowly towards the true minima. Once it reaches the minimum, then the inflaton can decay into radiation and particles in a mechanism called reheating.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="FRW_models.html" class="btn btn-neutral float-left" title="Friedmann Robertson Walker models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Inhomogeneous_Universe.html" class="btn btn-neutral float-right" title="The inhomogeneous Universe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Surhud More.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

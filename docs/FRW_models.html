@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friedmann Robertson Walker models &mdash; Cosmology IUCAA 2024 0.99 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=bb63aafa"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The early Universe" href="Early_Universe.html" />
+    <link rel="prev" title="Cosmological principle" href="Cosmological_principle.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Cosmology IUCAA 2024
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction to Cosmology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cosmological_principle.html">Cosmological principle</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Friedmann Robertson Walker models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Redshifts-in-an-expanding-Universe">Redshifts in an expanding Universe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Expansion-of-the-Universe-(Hubble-Lemaitre's-law)">Expansion of the Universe (Hubble-Lemaitre’s law)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Distances-in-the-Universe">Distances in the Universe</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Angular-size-of-a-distant-object-of-known-physical-size">Angular size of a distant object of known physical size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Flux-received-from-a-distant-source">Flux received from a distant source</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Dynamics-of-the-Friedmann-Robertson-Walker-metric">Dynamics of the Friedmann Robertson Walker metric</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#The-energy-momentum-tensor">The energy momentum tensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Matter-dominated-Universe">Matter dominated Universe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Radiation-dominated-Universe">Radiation dominated Universe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Lambda-dominated-Universe">Lambda dominated Universe</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Horizons-in-the-Universe">Horizons in the Universe</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Early_Universe.html">The early Universe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inhomogeneous_Universe.html">The inhomogeneous Universe</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cosmology IUCAA 2024</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Friedmann Robertson Walker models</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FRW_models.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="Friedmann-Robertson-Walker-models">
+<h1>Friedmann Robertson Walker models<a class="headerlink" href="#Friedmann-Robertson-Walker-models" title="Link to this heading"></a></h1>
+<p>In this section, we will take a look at some consequences of the Friedmann Robertson Walker metric that we derived for a homogeneous and isotropic Universe.</p>
+<section id="Redshifts-in-an-expanding-Universe">
+<h2>Redshifts in an expanding Universe<a class="headerlink" href="#Redshifts-in-an-expanding-Universe" title="Link to this heading"></a></h2>
+<p>Light travels on null geodesics, and they satisfy <span class="math notranslate nohighlight">\(ds^2=0\)</span> . Let us consider the position of our galaxy to be at the origin as a convenience. Let us look at a galaxy whose coordinates are (<span class="math notranslate nohighlight">\(\chi, \theta, \phi\)</span>). The light coming from this galaxy will travel along constant values of (<span class="math notranslate nohighlight">\(\theta, \phi\)</span>) on its path to us. Thus it should satisfy</p>
+<p><span class="math notranslate nohighlight">\(ds^2=0=-c^2 dt^2 + a^2(t) d\chi^2\)</span></p>
+<p>which implies that</p>
+<p><span class="math">\begin{equation}
+\int_{t_e}^{t_r} \frac{c dt}{a(t)} = -\int_{0}^{\chi} d\chi
+\end{equation}</span></p>
+<p>where <span class="math notranslate nohighlight">\(t_e\)</span> denotes the time of emission, <span class="math notranslate nohighlight">\(t_r\)</span> denotes the time of receipt of the photon. Now let us consider the emission and reception of a consecutive crest of the light wave. Let us suppose this second crest gets emitted at <span class="math notranslate nohighlight">\(t_e + \delta t_e\)</span>, and will be received <span class="math notranslate nohighlight">\(t_r + \delta t_r\)</span>. This implies that for this second crest,</p>
+<p><span class="math">\begin{equation}
+\int_{t_e+\delta t_r}^{t_r + \delta t_r} \frac{c dt}{a(t)} = -\int_{0}^{\chi} d\chi
+\end{equation}</span></p>
+<p>Subtracting the above equations we get</p>
+<p><span class="math">\begin{equation}
+\frac{c \delta t_e}{a(t_e)} -  \frac{c \delta t_r}{a(t_r)}= 0
+\end{equation}</span></p>
+<p>Given that <span class="math notranslate nohighlight">\(\lambda_e = c\delta t_e\)</span> and <span class="math notranslate nohighlight">\(\lambda_r = c\delta t_r\)</span>, are the wavelengths of the emitted and received light, we obtain</p>
+<p><span class="math">\begin{equation}
+\frac{\lambda_r}{\lambda_e} = 1+z = \frac{a(t_r)}{a(t_e)}
+\end{equation}</span></p>
+<p>This implies that the wavelength of light changes as it travels in a Universe with varying scale factor. If <span class="math notranslate nohighlight">\(a(t)\)</span> is an increasing function of time then this implies that the wavelength of the received light will be redshifted compared to when the light was emitted.</p>
+</section>
+<section id="Expansion-of-the-Universe-(Hubble-Lemaitre's-law)">
+<h2>Expansion of the Universe (Hubble-Lemaitre’s law)<a class="headerlink" href="#Expansion-of-the-Universe-(Hubble-Lemaitre's-law)" title="Link to this heading"></a></h2>
+<p>The FRW metric implies that the physical distances in the Universe scale with the scale factor. We can define mean motion coordinates which move together in a concerted manner due to the change in scale factor. Such coordinates are called comoving coordinates. The physical distance between any two locations at a given point of time is thus given by <span class="math notranslate nohighlight">\(R_{\rm phys} = a(t) R_{\rm com}\)</span> . The velocity between any two objects is then given by the rate of change of the physical distance</p>
+<p><span class="math">\begin{eqnarray}
+v = \frac{d R_{\rm phys}}{dt} &=& \frac{d \left[ a(t) R_{\rm com} \right]}{dt} \\
+&=&  \frac{da}{dt} R_{\rm com} + a(t) \frac{d R_{\rm com}}{dt} \\
+&=& \frac{\dot{a}}{a} R_{\rm phys} + a(t) \frac{d R_{\rm com}}{dt}
+\end{eqnarray}</span></p>
+<p>For fundamental observers at fixed locations in the comoving coordinates, the second term would be zero. This gives</p>
+<p><span class="math">\begin{equation}
+v = \left[\frac{\dot{a}}{a}\right] R_{\rm phys}
+\end{equation}</span></p>
+<p>This shows that the velocities should be proportional to the physical distance of galaxies. The constant of proportionality <span class="math notranslate nohighlight">\(\dot{a}/a\)</span> is called the Hubble-Lemaitre parameter. Note that <span class="math notranslate nohighlight">\(\dot{a}/a\)</span> is a function of time, the value at <span class="math notranslate nohighlight">\(t={\rm today}\)</span> is called the Hubble-Lemaitre constant.</p>
+<p>In reality galaxies will not necessarily sit still in comoving coordinates due to forces from other objects nearby. These velocities are called peculiar velocities and are a result of the small scale inhomogenieties in the Universe.</p>
+<p>The measurement of the Hubble Lemaitre constant is one of the biggest scientific inquiries currently. The value that Hubble derived in the 1920s was about <span class="math notranslate nohighlight">\(500\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>. It was marred by observational issues. The current accepted value for the Hubble constant ranges from <span class="math notranslate nohighlight">\(67\)</span> to <span class="math notranslate nohighlight">\(74\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>.</p>
+<p>The units of the Hubble-Lemaitre constant are the inverse of the timescale. Thus the Hubble-Lemaitre constant sets a time scale in the Universe. The value of <span class="math notranslate nohighlight">\(1/H_0\)</span> sets the order of magnitude for the timescale for the Universe. With the value of about <span class="math notranslate nohighlight">\(70\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>, you get a value which is close to <span class="math notranslate nohighlight">\(1.46\times10^{10}\)</span> years.</p>
+</section>
+<section id="Distances-in-the-Universe">
+<h2>Distances in the Universe<a class="headerlink" href="#Distances-in-the-Universe" title="Link to this heading"></a></h2>
+<section id="Angular-size-of-a-distant-object-of-known-physical-size">
+<h3>Angular size of a distant object of known physical size<a class="headerlink" href="#Angular-size-of-a-distant-object-of-known-physical-size" title="Link to this heading"></a></h3>
+<p>Consider the angle subtended at the observer by a known object of physical size <span class="math notranslate nohighlight">\(R_{\rm phys}\)</span> at a coordinate distance <span class="math notranslate nohighlight">\(\chi\)</span>. Let us assume that the two ends of the object are aligned at constant angle <span class="math notranslate nohighlight">\(\phi\)</span>. Thus in the metric we have <span class="math notranslate nohighlight">\(dt=0\)</span>, <span class="math notranslate nohighlight">\(d\chi=0\)</span> and <span class="math notranslate nohighlight">\(d\phi=0\)</span>. The metric is then given by</p>
+<p><span class="math">\begin{equation}
+ds^2 = a^2(t) f^2(\chi) d\theta^2
+\end{equation}</span></p>
+<p>The physical size of the object <span class="math notranslate nohighlight">\(R_{\rm phys}=a(t) f(\chi) \Delta \theta\)</span>. We can define a distance based on the angular size subtended by such an object as the angular diameter distance.</p>
+<p><span class="math">\begin{equation}
+D_{\rm ang} = \frac{R_{\rm phys}}{\Delta\theta} = a(t) f(\chi) = \frac{f(\chi)}{(1+z)}
+\end{equation}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Can you compute the physical area of the sphere at coordinate <span class="math notranslate nohighlight">\(\chi\)</span> away from the observer situated at the origin?</p></li>
+<li><p>Can you define the two dimensional analog of this problem on the surface of a sphere?</p></li>
+<li><p>Can you compute the comoving coordinate volume of a sphere centered at the origin with radius given by the coordinate <span class="math notranslate nohighlight">\(\chi\)</span>?</p></li>
+</ul>
+</div>
+</section>
+<section id="Flux-received-from-a-distant-source">
+<h3>Flux received from a distant source<a class="headerlink" href="#Flux-received-from-a-distant-source" title="Link to this heading"></a></h3>
+<p>Let us now consider the flux received from a distant source in the Universe, which has an intrinsic bolometric luminosity <span class="math notranslate nohighlight">\(L\)</span> (i.e., integrated over all wavelengths). We can write the luminosity emitted per unit wavelength as</p>
+<p><span class="math">\begin{equation}
+dL = L I(\lambda) d\lambda
+\end{equation}</span></p>
+<p>where</p>
+<p><span class="math">\begin{equation}
+\int I(\lambda) d\lambda = 1
+\end{equation}</span></p>
+<p>Remember luminosity is the energy emitted per unit time. The number of photons emitted per unit wavelength <span class="math notranslate nohighlight">\(\lambda_e\)</span> in a time <span class="math notranslate nohighlight">\(\delta t_e\)</span> are given by</p>
+<p><span class="math">\begin{equation}
+dN(\lambda_e) = dL \delta t_e \frac{\lambda_e}{hc} = L \frac{\lambda_e}{hc} I(\lambda_e) d\lambda_e \delta t_e
+\end{equation}</span></p>
+<p>The light emitted from the source will reach a sphere at coordinate <span class="math notranslate nohighlight">\(\chi\)</span> after time <span class="math notranslate nohighlight">\(t\)</span>. The spacetime metric for constant time and constant <span class="math notranslate nohighlight">\(\chi\)</span> value is given by <span class="math notranslate nohighlight">\(ds^2 = a^2(t) f^2(\chi) [d\theta^2 + \sin^2\theta d\phi^2]\)</span> which is the line element on the surface of a sphere with radius <span class="math notranslate nohighlight">\(a^2(t) f^2(\chi)\)</span>. The surface area of this sphere is given by</p>
+<p><span class="math">\begin{equation}
+\int a^2(t_r) f^2(\chi) d\cos\theta d\phi = 4 \pi a^2(t_r) f^2(\chi)
+\end{equation}</span></p>
+<p>We observe these photons today, thus <span class="math notranslate nohighlight">\(a^2(t_r)=1\)</span> by definition of the coordinate system to define lengths. The number of photons received per unit wavelength <span class="math notranslate nohighlight">\(\lambda_r\)</span> over the entire surface of the sphere is given by</p>
+<p><span class="math">\begin{equation}
+dN_r(\lambda_r) = dN_e\left( \frac{\lambda_r}{(1+z)}\right) = L \frac{\lambda_r}{(1+z)hc} I \left( \frac{\lambda_r}{1+z} \right) \frac{d\lambda_r}{(1+z)} \delta t_e
+\end{equation}</span></p>
+<p>Here we have used the fact that the wavelength changes as time goes on in the Universe. Now these photons will be received in an interval of time <span class="math notranslate nohighlight">\(\delta t_r\)</span> as we saw in the derivation in the first section. Thus the amount of energy that passes through the sphere in a unit time interval is given by</p>
+<p><span class="math">\begin{equation}
+\frac{dN_r(\lambda_r)}{\delta t_r} \frac{hc}{\lambda_r} = L \frac{1}{(1+z)} I \left( \frac{\lambda_r}{1+z} \right) \frac{d\lambda_r}{(1+z)} \frac{\delta t_e}{\delta t_r}
+\end{equation}</span></p>
+<p>The flux <span class="math notranslate nohighlight">\(F(\lambda_r) d\lambda_r\)</span> is the amount of energy received per unit time per unit area perpendicular to the line of sight to the source. Thus <span class="math notranslate nohighlight">\(F(\lambda_r) d\lambda_r\)</span> should be equal to</p>
+<p><span class="math">\begin{eqnarray}
+F(\lambda_r) d\lambda_r &=& \frac{dN_r(\lambda_r)}{\delta t_r} \frac{hc}{\lambda_r} \frac{1}{4\pi f^2(\chi) a^2(t_r)} \\
+&=&  \frac{L}{(1+z)} I \left( \frac{\lambda_r}{1+z} \right) \frac{d\lambda_r}{(1+z)} \frac{\delta t_e}{\delta t_r} \frac{1}{4\pi f^2(\chi) } \\
+&=& \frac{L}{(1+z)^2} I \left( \frac{\lambda_r}{1+z} \right) d\lambda_r \frac{\delta t_e}{\delta t_r} \frac{1}{4\pi f^2(\chi) } \\
+&=& \frac{L}{(1+z)^3} I \left( \frac{\lambda_r}{1+z} \right) d\lambda_r \frac{1}{4\pi f^2(\chi)}
+\end{eqnarray}</span></p>
+<p>The total bolometric flux is given by the integral over all wavelengths and therefore</p>
+<p><span class="math">\begin{equation}
+F_{\rm bol} = \int F(\lambda_r) d\lambda_r = \frac{L_{\rm bol}}{(1+z)^2 4\pi f^2(\chi)} = \frac{L_{\rm bol}}{4\pi D_{\rm lum}^2(\chi)}
+\end{equation}</span></p>
+<p>This can be intuitively understood as all photons lose energy and arrive at stretched out intervals as the Universe expands. The luminosity distance defined by the last equality is thus given by <span class="math">\begin{equation}
+D_{\rm lum}(\chi) = (1+z) f(\chi)
+\end{equation}</span></p>
+</section>
+</section>
+<section id="Dynamics-of-the-Friedmann-Robertson-Walker-metric">
+<h2>Dynamics of the Friedmann Robertson Walker metric<a class="headerlink" href="#Dynamics-of-the-Friedmann-Robertson-Walker-metric" title="Link to this heading"></a></h2>
+<p>Now let us try to understand how the scale factor of the Universe changes as a function of time. The equations of General Relativity govern the dynamics in the Universe. <span class="math">\begin{equation}
+G_{\mu\nu} = \frac{8 \pi G}{c^4} T_{\mu\nu}
+\end{equation}</span> where <span class="math notranslate nohighlight">\(G_{\mu\nu}\)</span> is the Einstein tensor, and <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> is the energy momentum tensor of the Universe. The left hand side of the equation concerns the metric and its derivatives. So this can be computed based on the metric components that we haver derived heuristically above.</p>
+<p>We consider the coordinates to be <span class="math notranslate nohighlight">\(ct, \chi, \theta, \phi\)</span> as <span class="math notranslate nohighlight">\(0, 1, 2, 3\)</span>: <span class="math">\begin{equation}
+g_{\mu \nu} =
+\begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0  & a^2(t) & 0 & 0 \\
+0  & 0 & a^2(t)f^2(\chi)  & 0 \\
+0  & 0 & 0 & a^2(t)f^2(\chi)\sin^2(\theta)
+\end{pmatrix}
+\end{equation}</span></p>
+<p>One can compute the Christoffel symbols for this metric using their definition</p>
+<p><span class="math">\begin{equation}
+\Gamma^i_{kl} = \frac{1}{2}g^{im}\left[ g_{mk,l} + g_{ml,k} - g_{kl,m} \right]
+\end{equation}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Show that <span class="math notranslate nohighlight">\(\Gamma^{0}_{\mu\nu} = \frac{1}{2}g_{\mu\nu,0}\)</span>.</p></li>
+</ul>
+</div>
+<p>Then we can use these Christoffel symbols derived from the metric to compute the Riemann tensor</p>
+<p><span class="math">\begin{equation}
+R^{\rho}{}_{\sigma\mu\nu} = \partial_\mu \Gamma^{\rho}_{\nu\sigma} - \partial_{\nu} \Gamma^\rho_{\mu\sigma}  + \Gamma^\rho_{\mu\lambda} \Gamma^\lambda_{\nu\sigma} - \Gamma^\rho_{\nu\lambda} \Gamma^\lambda_{\mu\sigma}
+\end{equation}</span></p>
+<p>The Riemann tensor can then be contracted to obtain the Ricci tensor by taking a trace</p>
+<p><span class="math">\begin{equation}
+R_{\mu\nu} = R^\lambda{}_{\mu\lambda\nu}
+\end{equation}</span></p>
+<p>and the Ricci scalar to obtain</p>
+<p><span class="math">\begin{equation}
+R = g^{\mu\nu}R_{\mu\nu}
+\end{equation}</span></p>
+<p>These components can be finally combined to obtain the Einstein tensor</p>
+<p><span class="math">\begin{equation}
+G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu}
+\end{equation}</span></p>
+<p>All of these involve tedious but straightforward mathematics and we will just quote the final results here:</p>
+<p><span class="math">\begin{eqnarray}
+G_{00} = 3 \left(\frac{\dot{a}}{a} \right)^2 + 3\frac{kc^2}{a^2} \\
+G_{ij} = - \left( 2\frac{\ddot{a}}{a}  + \left[\frac{\dot{a}}{a}\right]^2 + \frac{k c^2}{a^2} \right) a^2 \gamma_{ij}\,,
+\end{eqnarray}</span></p>
+<p>where <span class="math notranslate nohighlight">\(\gamma_{ij}\)</span> is the metric of the homoegenous and isotropic 3-space, i.e., <span class="math notranslate nohighlight">\(dl^2 = \gamma_{ij}dx^{i}dx^{j}\)</span>. The other components are equal to zero. In what follows, I will show a useful way to compute these tensors in python. We will use the packages <code class="docutils literal notranslate"><span class="pre">einsteinpy</span></code> and <code class="docutils literal notranslate"><span class="pre">sympy</span></code> to carry out these tedious mathematical calculations. In your <code class="docutils literal notranslate"><span class="pre">sciserver</span></code> environment, you could install these packages by typing <code class="docutils literal notranslate"><span class="pre">%pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">einsteinpy</span></code> and restarting the jupyter kernel
+by clicking <code class="docutils literal notranslate"><span class="pre">Kernel</span></code> and then <code class="docutils literal notranslate"><span class="pre">Restart</span></code>.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import important packages</span>
+
+<span class="kn">import</span> <span class="nn">sympy</span>
+<span class="kn">from</span> <span class="nn">einsteinpy.symbolic</span> <span class="kn">import</span> <span class="n">MetricTensor</span><span class="p">,</span> <span class="n">ChristoffelSymbols</span><span class="p">,</span> <span class="n">RiemannCurvatureTensor</span><span class="p">,</span> <span class="n">RicciTensor</span><span class="p">,</span> <span class="n">RicciScalar</span><span class="p">,</span> <span class="n">EinsteinTensor</span>
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Function</span><span class="p">,</span> <span class="n">simplify</span>
+
+<span class="c1"># Enable the best printing solution</span>
+<span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define symbols</span>
+
+<span class="k">def</span> <span class="nf">get_metric</span><span class="p">(</span><span class="n">univ_type</span><span class="p">):</span>
+    <span class="n">syms</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;t chi theta phi&quot;</span><span class="p">)</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">chi</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span> <span class="o">=</span> <span class="n">syms</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;a R c&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Initialize a 2d 4x4 array</span>
+    <span class="n">list2d</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
+
+    <span class="c1"># Define the function f depending upon the type of the Universe</span>
+    <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">universe</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">universe</span><span class="o">==</span><span class="s2">&quot;flat&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">x</span>
+        <span class="k">if</span> <span class="n">universe</span><span class="o">==</span><span class="s2">&quot;closed&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">sympy</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">universe</span><span class="o">==</span><span class="s2">&quot;open&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">sympy</span><span class="o">.</span><span class="n">sinh</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="c1"># Set the diagonal elements to be g_{\mu\nu}</span>
+    <span class="n">list2d</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="n">list2d</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="n">t</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">list2d</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="n">t</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">chi</span><span class="o">/</span><span class="n">R</span><span class="p">,</span> <span class="n">univ_type</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">list2d</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="n">t</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span> <span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">chi</span><span class="o">/</span><span class="n">R</span><span class="p">,</span> <span class="n">univ_type</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">sympy</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+    <span class="c1"># Define the metric</span>
+    <span class="n">frw</span> <span class="o">=</span> <span class="n">MetricTensor</span><span class="p">(</span><span class="n">list2d</span><span class="p">,</span> <span class="n">syms</span><span class="p">)</span>
+
+    <span class="c1"># Visualize the metric</span>
+    <span class="n">frw</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">frw</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">open_metric</span> <span class="o">=</span> <span class="n">get_metric</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">)</span>
+<span class="n">closed_metric</span> <span class="o">=</span> <span class="n">get_metric</span><span class="p">(</span><span class="s2">&quot;closed&quot;</span><span class="p">)</span>
+<span class="n">flat_metric</span> <span class="o">=</span> <span class="n">get_metric</span><span class="p">(</span><span class="s2">&quot;flat&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">open_metric</span><span class="o">.</span><span class="n">tensor</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="math notranslate nohighlight">
+$\displaystyle \left[\begin{matrix}-1 &amp; 0 &amp; 0 &amp; 0\\0 &amp; a^{2}{\left(t \right)} &amp; 0 &amp; 0\\0 &amp; 0 &amp; R^{2} a^{2}{\left(t \right)} \sinh^{2}{\left(\frac{\chi}{R} \right)} &amp; 0\\0 &amp; 0 &amp; 0 &amp; R^{2} a^{2}{\left(t \right)} \sin^{2}{\left(\theta \right)} \sinh^{2}{\left(\frac{\chi}{R} \right)}\end{matrix}\right]$</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">EinsteinTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">open_metric</span><span class="p">)</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">open_metric</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="math notranslate nohighlight">
+$\displaystyle - \frac{2.0 \frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}} - \frac{1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}}{a^{2}{\left(t \right)}} + \frac{1.0}{R^{2} a^{2}{\left(t \right)}}$</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">EinsteinTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">flat_metric</span><span class="p">)</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">flat_metric</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="math notranslate nohighlight">
+$\displaystyle \frac{- 2.0 a{\left(t \right)} \frac{d^{2}}{d t^{2}} a{\left(t \right)} - 1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}}{a^{2}{\left(t \right)}}$</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">EinsteinTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">closed_metric</span><span class="p">)</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">closed_metric</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="math notranslate nohighlight">
+$\displaystyle - \frac{2.0 \frac{d^{2}}{d t^{2}} a{\left(t \right)}}{a{\left(t \right)}} - \frac{1.0 \left(\frac{d}{d t} a{\left(t \right)}\right)^{2}}{a^{2}{\left(t \right)}} - \frac{1.0}{R^{2} a^{2}{\left(t \right)}}$</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">simplify</span><span class="p">(</span><span class="n">EinsteinTensor</span><span class="o">.</span><span class="n">from_metric</span><span class="p">(</span><span class="n">closed_metric</span><span class="p">)</span><span class="o">.</span><span class="n">tensor</span><span class="p">()[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="math notranslate nohighlight">
+$\displaystyle \frac{3.0 \left(R^{2} \left(\frac{d}{d t} a{\left(t \right)}\right)^{2} + 1\right)}{R^{2} a^{2}{\left(t \right)}}$</div></div>
+</div>
+<section id="The-energy-momentum-tensor">
+<h3>The energy momentum tensor<a class="headerlink" href="#The-energy-momentum-tensor" title="Link to this heading"></a></h3>
+<p>The energy momentum tensor <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> is the flux of the 4-momentum <span class="math notranslate nohighlight">\(p_{\mu}\)</span>. In a homogeneous and isotropic Universe it must have only a diagonal form, with the space components all being equal. In the lecture course on GR, you have encountered the energy momentum tensor of ideal fluid, which is exactly what we will use for the energy momentum tensor in the Einstein field equations for the Universe. The ideal fluid is described by its density <span class="math notranslate nohighlight">\(\rho\)</span> and pressure <span class="math notranslate nohighlight">\(p\)</span>.
+The energy momentum tensor is given by</p>
+<p><span class="math">\begin{equation}
+T_{\mu \nu} = (\rho c^2 + p) u_{\mu} u_{\nu} + p c^2 g_{\mu\nu}
+\end{equation}</span></p>
+<p>For fundamental observer which move with the mean motion of the Universe, <span class="math notranslate nohighlight">\(u_{\mu}=[c, 0, 0, 0]\)</span>, because the three spatial coordinates do not change with time, and the derivative of the first coordinate <span class="math notranslate nohighlight">\(ct\)</span> with respect to proper time is just <span class="math notranslate nohighlight">\(c\)</span>. For the zero zero component,</p>
+<p><span class="math">\begin{eqnarray}
+T_{00} &=& \rho(t) c^4 \\
+T_{ij}  &=& p(t) c^2 a^2(t) \gamma_{ij}
+\end{eqnarray}</span></p>
+<p>Equating the <span class="math notranslate nohighlight">\(00\)</span> component of the Einstein’s field equations, we get the first of the Friedmann equations, <span class="math">\begin{equation}
+\left[ \left(\frac{\dot{a}}{a}\right)^2 + \frac{kc^2}{a^2} \right] = \frac{8\pi G \rho}{3}
+\end{equation}</span></p>
+<p>and the second equation corresponds to the <span class="math notranslate nohighlight">\(ij\)</span> components <span class="math">\begin{equation}
+- \left[ \frac{2\ddot{a}}{a} + \left(\frac{\dot{a}}{a}\right)^2 + \frac{k c^2}{a^2} \right] = 8 \pi G \frac{p}{c^2}
+\end{equation}</span></p>
+<p>The above two equation can be combined to obtain</p>
+<p><span class="math">\begin{equation}
+\frac{\ddot{a}}{a} = - \frac{4\pi G}{3} \left(\rho + \frac{3 p}{c^2}\right)
+\end{equation}</span></p>
+<p>This shows that for energy density in the Universe with a non-negative pressure, the scale factor <span class="math notranslate nohighlight">\(a(t)\)</span> cannot have a positive acceleration.</p>
+<p>The two equations given above also imply the following intuitive conservation equation if you multiply the first equation by <span class="math notranslate nohighlight">\(a^3\)</span> and then differentiating and getting rid of the second derivative term using the second equation:</p>
+<p><span class="math">\begin{equation}
+\frac{d}{dt}\left[ a^3 \rho c^2 \right] + p \frac{d}{dt}\left[ a^3 \right] = 0
+\end{equation}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Prove the equality given above using the Friedmann equations.</p></li>
+<li><p>Show that this equality also implies <span class="math">\begin{equation}
+\frac{d\rho}{dt} + 3 \frac{\dot{a}}{a} \left(\rho + \frac{p}{c^2}\right) = 0
+\end{equation}</span></p></li>
+</ul>
+</div>
+<p>Let us take a look at the first Friedmann equation to compute the evolution of the scale factor of the Universe.</p>
+<p><span class="math">\begin{equation}
+\left[ \left(\frac{\dot{a}}{a}\right)^2 + \frac{kc^2}{a^2} \right] = \frac{8\pi G \rho}{3}
+\end{equation}</span></p>
+<p>What are the initial conditions for this problem. Since the scale factor is a growth factor we are free to choose the normalization. Let us work with the condition that <span class="math notranslate nohighlight">\(a(t)=1\)</span> today. The factor <span class="math notranslate nohighlight">\({\dot{a}}/{a}\)</span> is nothing but the Hubble Lemaitre constant today whose value can be measured with observations. Thus the value of Hubble Lemaitre constant <span class="math notranslate nohighlight">\(H_0\)</span> is our second initial condition. This along with the behaviour of energy density with <span class="math notranslate nohighlight">\(a\)</span> should allow us to integrate
+the above equation.</p>
+<p>Before we solve the Friedmann equation, notice that for the Universe to be spatially flat, the density of the Universe today should be equal to a very special value <span class="math">\begin{equation}
+\rho_{\rm crit} = \frac{3H_0^2}{8\pi G}
+\end{equation}</span></p>
+<p><span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right)^2 &=& H_0^2 \left[ \frac{\rho}{\rho_{\rm crit}} - \frac{kc^2}{a^2H_0^2} \right]
+\end{eqnarray}</span> Substituting <span class="math notranslate nohighlight">\(\dot{a}/a = H_0\)</span> today, we find that. <span class="math">\begin{eqnarray}
+1 &=& \left[ \frac{\rho_0}{\rho_{\rm crit}} - \frac{kc^2}{H_0^2} \right] \\
+-\frac{kc^2}{H_0^2} &=& \left[ 1 - \frac{\rho_0}{\rho_{\rm crit}} \right] : =  \Omega_{\rm k, 0}
+\end{eqnarray}</span> If the Universe is denser than <span class="math notranslate nohighlight">\(\rho_{\rm crit}\)</span> today, then it has a closed geometry <span class="math notranslate nohighlight">\(k&gt;0\)</span>, while a Universe which is less dense than the critical density will have an open geometry with <span class="math notranslate nohighlight">\(k&lt;0\)</span>. Thus we can simplify the Friedmann equation to</p>
+<p><span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right)^2 &=& H_0^2 \left[ \frac{\rho}{\rho_{\rm crit}} + \frac{\Omega_{\rm k, 0}}{a^2} \right]
+\end{eqnarray}</span></p>
+<p>Now we need to figure out how the density of the Universe changes as a function of time. Let us consider a few cases to understand the evolution of these components in a non-static Universe. Let us first consider just matter. For matter the pressure comes from velocities. However given that the velocities of matter are non-relativistic, the pressure is negligible compared to the energy density. Thus for matter, we have <span class="math notranslate nohighlight">\(p &lt;&lt; \rho c^2\)</span>, and it can be ignored. The equation of energy
+conservation then implies</p>
+<p><span class="math">\begin{equation}
+\frac{d}{dt}\left[ a^3 \rho c^2 \right] = 0
+\end{equation}</span></p>
+<p>Thus the matter density <span class="math notranslate nohighlight">\(\rho_{\rm m} \propto a^{-3}\)</span>, the density decreases if the Universe expands, and increases if the Universe contracts. This is consistent with the increase in the total volume of the Universe <span class="math notranslate nohighlight">\(\propto a^3\)</span> due to the increase in scale factor, and thus the density decreases by the same factor <span class="math notranslate nohighlight">\(a^3\)</span> if there is conservation of matter in a comoving volume.</p>
+<p>What about another form of energy density in the Universe, that of radiation. One can show that the photon energy density is related to the pressure such that</p>
+<p><span class="math">\begin{equation}
+p = \frac{1}{3} \rho c^2
+\end{equation}</span></p>
+<p>Plugging this into the pressure density equation, we find <span class="math">\begin{equation}
+\rho_{\rm rad} \propto a^{-4}
+\end{equation}</span></p>
+<p>The energy density of radiation changes due to the change in volume as well as the change in energy that a photon undergoes when the Universe expands or contracts.</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Find how the density of an ideal fluid with pressure <span class="math notranslate nohighlight">\(p =w \rho c^2\)</span> evolves in a non-static Universe as a function of the scale factor.</p></li>
+</ul>
+</div>
+<p>The real Universe can have fluids of different kinds all together thus the combined Friedmann equation looks like</p>
+<p><span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right)^2 &=& H_0^2 \left[ \frac{\rho_m}{\rho_{\rm crit}} + \frac{\rho_{\rm rad}}{\rho_{\rm crit}} + \frac{\rho_{\rm w}}{\rho_{\rm crit}} +  \frac{\Omega_k}{a^2} \right]  = H_0^2 E^2(a)
+\end{eqnarray}</span></p>
+<p>Analogous to <span class="math notranslate nohighlight">\(\Omega_{\rm k}\)</span> we can define <span class="math notranslate nohighlight">\(\Omega_{\rm x, 0} = \rho_{\rm x, 0}/\rho_{\rm crit}\)</span> which finally reduces the equation to a much more manageable form <span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right)^2 &=& H_0^2 \left[ \Omega_{\rm m, 0} a^{-3} + \Omega_{\rm rad, 0} a^{-4} + \Omega_{\rm w, 0}a ^{-3(1+w)} + \Omega_k a^{-2} \right]  = H_0^2 E^2(a)
+\end{eqnarray}</span> where <span class="math notranslate nohighlight">\(\Omega_{\rm k} = 1 - \Omega_{\rm m} - \Omega_{\rm rad} - \Omega_{\rm w, 0}\)</span>. Current observations indicate that a special fluid called dark energy with an equation of state <span class="math notranslate nohighlight">\(w=-1\)</span> is required to be present in the Universe. Thus we will assume that the Universe has these combinations of fluid (matter, radiation and <span class="math notranslate nohighlight">\(\Lambda\)</span>).</p>
+</section>
+<section id="Matter-dominated-Universe">
+<h3>Matter dominated Universe<a class="headerlink" href="#Matter-dominated-Universe" title="Link to this heading"></a></h3>
+<p>First let us consider a Universe just made up of matter. In this case the Friedmann equation is very simple <span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right) &=& H_0 \left[\Omega_{\rm m, 0}a^{-3} +  (1-\Omega_{\rm m,0}) a^{-2} \right]^{1/2}
+\end{eqnarray}</span> In such a Universe, we can obtain <span class="math notranslate nohighlight">\(\dot{a}=0\)</span>, if and only if <span class="math">\begin{equation}
+\Omega_{\rm m, 0}a^{-3} +  (1-\Omega_{\rm m,0}) a^{-2} = 0
+\end{equation}</span> which gives a special epoch <span class="math">\begin{equation}
+a = \frac{\Omega_{\rm m, 0}}{(\Omega_{\rm m,0}-1)}
+\end{equation}</span> Notice that this has a non-negative scale factor only if <span class="math notranslate nohighlight">\(\Omega_{\rm m,0}&gt;1\)</span>. Thus if the Universe has <span class="math notranslate nohighlight">\(\Omega_{\rm m}&gt;1\)</span> which corresponds to <span class="math notranslate nohighlight">\(\Omega_{\rm k}&lt;0\)</span>, the scale factor has a maximum. Given that the Universe is expanding today it means that the Universe will stop its expansion at a finite future, and given that the value of <span class="math notranslate nohighlight">\(\ddot{a}&lt;0\)</span>, such a Universe will start contracting.</p>
+<p>For <span class="math notranslate nohighlight">\(\Omega_{\rm m, 0}=1\)</span>, the Universe keeps on increasing at an ever slow pace and only asymptotically reaches <span class="math notranslate nohighlight">\(\dot{a}=0\)</span>, while for a <span class="math notranslate nohighlight">\(\Omega_{\rm m,0}&lt;1\)</span>, the Universe keeps on expanding but never reaches a scale factor where the expansion halts.</p>
+<p>Let us consider one of these special cases: <span class="math notranslate nohighlight">\(\Omega_{\rm m,0}=1\)</span>. In this case, we obtain <span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right) &=& H_0 a^{-3/2}  \\
+\int_{a}^{1} a^{1/2} da &=& \int_{t}^{t_0} H_0 dt \\
+\left.\frac{2a^{3/2}}{3}\right|_{a}^{1} &=& H_0(t_0-t) \\
+a(t) &=& \left[1 - \frac{3}{2}H_0 (t_0-t)\right]^{2/3}
+\end{eqnarray}</span> In this model the current age of the Universe <span class="math notranslate nohighlight">\(t_0\)</span> is related to the time at which <span class="math notranslate nohighlight">\(a=0\)</span> as <span class="math">\begin{eqnarray}
+t_0-t = \frac{2}{3H_0}
+\end{eqnarray}</span></p>
+</section>
+<section id="Radiation-dominated-Universe">
+<h3>Radiation dominated Universe<a class="headerlink" href="#Radiation-dominated-Universe" title="Link to this heading"></a></h3>
+<p>In the early Universe when it was small, radiation is expected to dominate the energy density of the Universe as it increases quicker than <span class="math notranslate nohighlight">\(\rho_{\rm m}\)</span> as <span class="math notranslate nohighlight">\(a\rightarrow 0\)</span>. In this case the Friedmann equation looks like <span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right) &=& H_0 \Omega_{r, 0} a^{-2}  \\
+\int a da &=& \int H_0 \Omega_{r, 0} dt \\
+\frac{a^2}{2} &=& H_0 \Omega_{r, 0} t  \\
+a(t) &=& [2 H_0 \Omega_{r, 0} t]^{1/2}
+\end{eqnarray}</span></p>
+</section>
+<section id="Lambda-dominated-Universe">
+<h3>Lambda dominated Universe<a class="headerlink" href="#Lambda-dominated-Universe" title="Link to this heading"></a></h3>
+<p>On the other hand, when <span class="math notranslate nohighlight">\(a&gt;&gt;1\)</span>, we expect the Universe to be dominated by <span class="math notranslate nohighlight">\(\Omega_{\rm \Lambda}\)</span>. The Friedmann equation for that case looks like <span class="math">\begin{eqnarray}
+\left(\frac{\dot{a}}{a}\right) &=& H_0 \Omega_{\Lambda, 0} \\
+\end{eqnarray}</span> and we obtain <span class="math">\begin{eqnarray}
+a(t) = \exp\left[ H_0 \Omega_{\Lambda, 0} (t-t_0) \right] \\
+\end{eqnarray}</span> and the Universe will reach a state of exponential expansion.</p>
+<p>From all these simple homogeneous and isotropic models, we can work out the expansion history of the Universe, its age, and its fate by making some simple measurements of the energy density of various constituents in the Universe and the Hubble Lemaitre constant which measures the rate of expansion of the Universe today! A number of cosmology experiments use these simple equations to relate scale factor and time to help us understand the history and fate of the Universe.</p>
+</section>
+</section>
+<section id="Horizons-in-the-Universe">
+<h2>Horizons in the Universe<a class="headerlink" href="#Horizons-in-the-Universe" title="Link to this heading"></a></h2>
+<p>Because light travels at a finite speed in the Universe, it can only travel a finite distance from a source given the age of the Universe today. Let us compute what is the comoving distance light would have travelled from <span class="math notranslate nohighlight">\(a=0\)</span> to today <span class="math notranslate nohighlight">\(a=1\)</span>.</p>
+<p><span class="math">\begin{eqnarray}
+\chi_{\rm horizon} &=& \int_0^{1} \frac{cdt}{a(t)} \\
+&=& \int_0^{1} \frac{cda}{\dot{a}a(t)} \\
+&=& \int_0^1 \frac{cda}{\frac{\dot{a}}{a} a^2(t)} \\
+&=& \int_0^1 \frac{cda}{H_0 E(a) a^2(t)}
+\end{eqnarray}</span></p>
+<p>This is a finite quantity. Given causality, anything in the Universe can not be affected by object beyond its horizon.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[165]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
+
+
+<span class="k">class</span> <span class="nc">cosmology</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Omega_m</span><span class="p">,</span> <span class="n">Omega_r</span><span class="p">,</span> <span class="n">Omega_l</span><span class="p">,</span> <span class="n">H0</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span> <span class="o">=</span> <span class="n">Omega_m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span> <span class="o">=</span> <span class="n">Omega_r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">=</span> <span class="n">Omega_l</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">H0</span> <span class="o">=</span> <span class="n">H0</span>
+
+        <span class="c1"># Define the curvature based on the Friedmann equation evaluated at t=today.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Omega_m</span> <span class="o">-</span> <span class="n">Omega_r</span> <span class="o">-</span> <span class="n">Omega_l</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">a_max</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_scale_factor</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">,</span> <span class="s2">&quot;Maximum scale factor&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">zofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">a</span> <span class="o">-</span> <span class="mf">1.</span>
+
+    <span class="k">def</span> <span class="nf">aofz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mf">1.</span><span class="o">+</span><span class="n">z</span><span class="p">)</span>
+
+    <span class="c1"># Define the RHS of the Friedmann equation</span>
+    <span class="k">def</span> <span class="nf">Esqofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span>
+
+    <span class="c1"># Define derivative of the RHS of the Friedmann equation</span>
+    <span class="k">def</span> <span class="nf">Esqprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mf">3.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">-</span> <span class="mf">4.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">5</span> <span class="o">-</span> <span class="mf">2.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="p">)</span>
+
+    <span class="c1"># Define the RHS of the Friedmann equation</span>
+    <span class="k">def</span> <span class="nf">Eofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+
+    <span class="c1"># Define derivative of the RHS of the Friedmann equation</span>
+    <span class="k">def</span> <span class="nf">Eprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+
+
+    <span class="c1"># Define the time given a scale factor (time will be returned in units of 1/H0)</span>
+    <span class="k">def</span> <span class="nf">compute_time_given_scale</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">contracting</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+
+        <span class="c1"># Integrate the function \int da/a/E(a) = \int d(t/(1/H0))</span>
+        <span class="k">def</span> <span class="nf">integrand</span><span class="p">(</span><span class="n">ap</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">ap</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">Eofa</span><span class="p">(</span><span class="n">ap</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+        <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">contracting</span><span class="p">:</span>
+            <span class="n">exp_soln</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">)</span>
+            <span class="n">cont_soln</span><span class="p">,</span> <span class="n">error2</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+            <span class="n">answer</span> <span class="o">=</span> <span class="n">exp_soln</span> <span class="o">-</span> <span class="n">cont_soln</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">answer</span><span class="p">,</span> <span class="n">error</span> <span class="o">=</span> <span class="n">quad</span><span class="p">(</span><span class="n">integrand</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">answer</span>
+
+    <span class="c1"># Compute maximum scale factor if the Universe is closed based on the zero of Eofa</span>
+    <span class="k">def</span> <span class="nf">max_scale_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+
+        <span class="c1"># Compute the zero of the expansion factor</span>
+        <span class="n">sol</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Esqofa</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">fprime</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">Esqprimeofa</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;newton&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">sol</span><span class="o">.</span><span class="n">flag</span> <span class="o">==</span> <span class="s2">&quot;convergence error&quot;</span><span class="p">:</span>
+            <span class="n">sol</span><span class="o">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+
+        <span class="k">return</span> <span class="n">sol</span><span class="o">.</span><span class="n">root</span>
+
+
+    <span class="c1"># Exercise:</span>
+    <span class="c1"># Write code to compute coordinate distance $\chi$ as a function of the scale factor</span>
+    <span class="c1"># Integrand is: \int c dt/a(t) = \int dchi</span>
+    <span class="c1"># Forget about the contracting case for now.</span>
+
+    <span class="c1"># Write code to compute angular diameter distance as a function of the scale factor</span>
+    <span class="c1"># f(chi) * a(t)</span>
+
+    <span class="c1"># Write code to compute the luminosity distance as a function of the scale factor</span>
+    <span class="c1"># f(chi) / a(t)</span>
+
+    <span class="c1"># Write code to compute the comoving distance travelled by light from a given scale factor to today</span>
+    <span class="c1"># Integrand is: \int c dt/a(t) = \int c/H0 da/E(a)/a^2(t)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[166]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flat_c</span> <span class="o">=</span> <span class="n">cosmology</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">)</span>
+<span class="n">open_c</span> <span class="o">=</span> <span class="n">cosmology</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">)</span>
+<span class="n">closed_c</span> <span class="o">=</span> <span class="n">cosmology</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+inf Maximum scale factor
+inf Maximum scale factor
+1.4999999999999998 Maximum scale factor
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[167]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute scale factor versus time</span>
+<span class="n">scale_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-2</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scale_arr</span><span class="p">)</span>
+
+<span class="n">time_arr_flat</span> <span class="o">=</span> <span class="n">scale_arr</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="n">time_arr_closed</span> <span class="o">=</span> <span class="n">scale_arr</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="n">time_arr_closed_cont</span> <span class="o">=</span> <span class="n">scale_arr</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="n">time_arr_open</span> <span class="o">=</span> <span class="n">scale_arr</span><span class="o">*</span><span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">scale_arr</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+    <span class="n">time_arr_flat</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">flat_c</span><span class="o">.</span><span class="n">compute_time_given_scale</span><span class="p">(</span><span class="n">scale_arr</span><span class="p">[</span><span class="n">ii</span><span class="p">])</span>
+    <span class="n">time_arr_closed</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">closed_c</span><span class="o">.</span><span class="n">compute_time_given_scale</span><span class="p">(</span><span class="n">scale_arr</span><span class="p">[</span><span class="n">ii</span><span class="p">])</span>
+    <span class="n">time_arr_closed_cont</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">closed_c</span><span class="o">.</span><span class="n">compute_time_given_scale</span><span class="p">(</span><span class="n">scale_arr</span><span class="p">[</span><span class="n">ii</span><span class="p">],</span> <span class="n">contracting</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">time_arr_open</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">open_c</span><span class="o">.</span><span class="n">compute_time_given_scale</span><span class="p">(</span><span class="n">scale_arr</span><span class="p">[</span><span class="n">ii</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[0.01       0.01029903 0.01059806 ... 2.99940194 2.99970097 3.        ]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[168]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">pl</span>
+<span class="o">%</span><span class="k">pylab</span> inline
+
+<span class="n">conf</span> <span class="o">=</span> <span class="o">%</span><span class="k">config</span> InlineBackend.rc
+<span class="n">conf</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<span class="n">conf</span><span class="p">[</span><span class="s1">&#39;savefig.dpi&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">100</span>
+<span class="n">conf</span><span class="p">[</span><span class="s1">&#39;font.serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Computer Modern&quot;</span>
+<span class="n">conf</span><span class="p">[</span><span class="s1">&#39;font.sans-serif&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Computer Modern&quot;</span>
+<span class="n">conf</span><span class="p">[</span><span class="s1">&#39;text.usetex&#39;</span><span class="p">]</span><span class="o">=</span><span class="kc">True</span>
+
+<span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="o">%</span><span class="k">config</span> InlineBackend.rc
+<span class="o">%</span><span class="k">pylab</span> inline
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Populating the interactive namespace from numpy and matplotlib
+Populating the interactive namespace from numpy and matplotlib
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[169]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">idx</span> <span class="o">=</span> <span class="o">~</span><span class="p">(</span><span class="n">time_arr_closed</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_arr_closed</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">scale_arr</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;closed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_arr_closed_cont</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">scale_arr</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;closed&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_arr_open</span><span class="p">,</span> <span class="n">scale_arr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;open&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_arr_flat</span><span class="p">,</span> <span class="n">scale_arr</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;flat&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(t - $t_{\rm today})$ [1/$H_0$]&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Scale factor a&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s2">&quot;today&quot;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[169]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Text(-0.15, 1.5, &#39;today&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/FRW_models_17_1.png" src="_images/FRW_models_17_1.png" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Complete the simple python code above to figure out how the luminosity distance, and the angular diameter distance change as a function of the scale factor.</p></li>
+<li><p>Make plots of these distances as a function of the scale factor.</p></li>
+<li><p>Use the above code to see how the scale factor of the Universe changes as a function of time for a Universe with <span class="math notranslate nohighlight">\(\Omega_{\rm m}=0.3, \Omega_{\rm r}=0.0\)</span> and <span class="math notranslate nohighlight">\(\Omega_{\Lambda}=0.7\)</span>.</p></li>
+</ul>
+</div>
+<p>According to the cosmological observations today, we have <span class="math notranslate nohighlight">\(\Omega_{\rm m}=0.315\)</span>, <span class="math notranslate nohighlight">\(\Omega_{\rm \Lambda}=0.685\)</span>, <span class="math notranslate nohighlight">\(\Omega_{r}\sim 10^{-4}\)</span>. Given that the density of these components are a function of the scale factor, the energy densities will change. Even though the radiation energy density is extremely small today, at early times when the scale factor was small, the constituents of the Universe will be entirely dominated by radiation. Thus the behaviour of the scale factor at
+different times depends upon the constituents.</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<p>Some questions to ponder:</p>
+<p>Does a closed Universe always mean that it will undergo a big crunch? Does a Universe with a <span class="math notranslate nohighlight">\(\Lambda\)</span> always mean that it will expand exponentially?</p>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[162]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">closed_c</span> <span class="o">=</span> <span class="n">cosmology</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+<span class="n">eofa</span> <span class="o">=</span> <span class="n">closed_c</span><span class="o">.</span><span class="n">Esqofa</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">eofa</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$a$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$E^2(a)$&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[162]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Text(0, 0.5, &#39;$E^2(a)$&#39;)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="_images/FRW_models_20_1.png" src="_images/FRW_models_20_1.png" />
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Cosmological_principle.html" class="btn btn-neutral float-left" title="Cosmological principle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Early_Universe.html" class="btn btn-neutral float-right" title="The early Universe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Surhud More.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
