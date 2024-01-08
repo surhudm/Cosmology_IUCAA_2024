@@ -11,7 +11,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "This course in cosmology is designed for students in the IUCAA NCRA Graduate school in 2022-2023. Prior knowledge of General Relativity is assumed."
+    "This course in cosmology is designed for students in the IUCAA NCRA Graduate school in 2023-2024. Prior knowledge of General Relativity is assumed."
    ]
   },
   {
@@ -66,7 +66,7 @@
     "\n",
     "## Tutors\n",
     "\n",
-    "Divya Rana (divyar$@$iucaa.in)"
+    "None assigned thus far"
    ]
   },
   {
@@ -95,7 +95,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.10.8"
+   "version": "3.10.13"
   }
  },
  "nbformat": 4,
