@@ -1,0 +1,43 @@
+
+
+
+from IPython.display import Video, HTML, YouTubeVideo
+width=600
+height=400
+YouTubeVideo("eDGtFRj4xXc", width=width, height=height)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+from IPython.display import Image
+width = 600
+Image("images/mass_function.png", width=width)
+
+
+
+
+
+
+
+
+
+
+
+
+Image("images/rsd.jpg", width=width)
+
+
+Image("images/rsd_corr.jpg", width=width)
+
+
+

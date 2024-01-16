@@ -1,0 +1,30 @@
+from IPython.display import Image
+from IPython.display import Video, HTML, YouTubeVideo
+width = 600
+
+
+
+
+
+YouTubeVideo("08LBltePDZw")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

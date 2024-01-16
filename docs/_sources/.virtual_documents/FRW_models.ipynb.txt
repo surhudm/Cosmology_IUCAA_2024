@@ -1,0 +1,257 @@
+
+
+
+
+
+
+# Import important packages
+
+import sympy
+from einsteinpy.symbolic import MetricTensor, ChristoffelSymbols, RiemannCurvatureTensor, RicciTensor, RicciScalar, EinsteinTensor
+from sympy import Function, simplify
+
+# Enable the best printing solution
+sympy.init_printing()  
+
+
+# Define symbols
+
+def get_metric(univ_type):
+    syms = sympy.symbols("t chi theta phi")
+    t, chi, theta, phi = syms
+    a, R, c = sympy.symbols("a R c")
+
+    # Initialize a 2d 4x4 array
+    list2d = [[0 for i in range(4)] for i in range(4)]
+
+    # Define the function f depending upon the type of the Universe
+    def f(x, universe):
+        if universe=="flat":
+            return x
+        if universe=="closed":
+            return sympy.sin(x)
+        if universe=="open":
+            return sympy.sinh(x)
+
+    # Set the diagonal elements to be g_{\mu\nu}
+    list2d[0][0] = -1
+    list2d[1][1] = Function(a)(t)**2 
+    list2d[2][2] = Function(a)(t)**2*(R*f(chi/R, univ_type))**2
+    list2d[3][3] = Function(a)(t)**2* (R*f(chi/R, univ_type))**2 * (sympy.sin(theta) ** 2)
+
+    # Define the metric
+    frw = MetricTensor(list2d, syms)
+
+    # Visualize the metric
+    frw.tensor()
+    
+    return frw
+
+
+open_metric = get_metric("open")
+closed_metric = get_metric("closed")
+flat_metric = get_metric("flat")
+
+
+flat_metric.tensor()
+
+
+open_metric.tensor()
+
+
+closed_metric.tensor()
+
+
+ChristoffelSymbols.from_metric(flat_metric).tensor()
+
+
+simplify(EinsteinTensor.from_metric(flat_metric).tensor()[0,0])
+
+
+simplify(EinsteinTensor.from_metric(closed_metric).tensor()[0,0])
+
+
+simplify(EinsteinTensor.from_metric(open_metric).tensor()[0,0])
+
+
+simplify(EinsteinTensor.from_metric(open_metric).tensor()[1,1]/open_metric.tensor()[1, 1])
+
+
+simplify(EinsteinTensor.from_metric(flat_metric).tensor()[1,1]/flat_metric.tensor()[1, 1])
+
+
+simplify(EinsteinTensor.from_metric(closed_metric).tensor()[1,1]/closed_metric.tensor()[1, 1])
+
+
+simplify(EinsteinTensor.from_metric(closed_metric).tensor()[0,0])
+
+
+
+
+
+
+
+
+
+
+
+import numpy as np
+from scipy.integrate import quad
+from scipy import optimize
+
+
+class cosmology:
+    
+    def __init__(self, Omega_m, Omega_r, Omega_l, H0):
+        self.Omega_m = Omega_m
+        self.Omega_r = Omega_r
+        self.Omega_l = Omega_l
+        self.H0 = H0
+        
+        # Define the curvature based on the Friedmann equation evaluated at t=today.
+        self.Omega_k = 1 - Omega_m - Omega_r - Omega_l
+        
+        self.a_max = self.max_scale_factor()
+        print(self.a_max, "Maximum scale factor")
+        
+    def zofa(self, a):
+        return 1./a - 1.
+
+    def aofz(self, z):
+        return 1/(1.+z)
+        
+    # Define the RHS of the Friedmann equation
+    def Esqofa(self, a):
+        return (self.Omega_m*a**-3 + self.Omega_r*a**-4 + self.Omega_l + self.Omega_k*a**-2 )
+    
+    # Define derivative of the RHS of the Friedmann equation
+    def Esqprimeofa(self, a):
+        return (-3.*self.Omega_m*a**-4 - 4.*self.Omega_r*a**-5 - 2.*self.Omega_k*a**-3 )  
+    
+    # Define the RHS of the Friedmann equation
+    def Eofa(self, a):
+        return (self.Omega_m*a**-3 + self.Omega_r*a**-4 + self.Omega_l + self.Omega_k*a**-2 )**0.5
+
+    # Define derivative of the RHS of the Friedmann equation
+    def Eprimeofa(self, a):
+        return (-3*self.Omega_m*a**-4 - 4*self.Omega_r*a**-5 - 2*self.Omega_k*a**-3 )/(self.Omega_m*a**-3 + self.Omega_r*a**-4 + self.Omega_l + self.Omega_k*a**-2 )**0.5
+
+    
+    # Define the time given a scale factor (time will be returned in units of 1/H0)
+    def compute_time_given_scale(self, a, contracting=False):
+        
+        # Integrate the function \int da/a/E(a) = \int d(t/(1/H0))
+        def integrand(ap):
+            return 1/ap/self.Eofa(ap)
+        
+        if a>self.a_max:
+            return np.nan
+        
+        answer = 0
+        if contracting:
+            exp_soln, error = quad(integrand, 1, self.a_max)
+            cont_soln, error2 = quad(integrand, self.a_max, a)
+            answer = exp_soln - cont_soln
+        else:
+            answer, error = quad(integrand, 1, a)
+            
+        return answer
+    
+    # Compute maximum scale factor if the Universe is closed based on the zero of Eofa
+    def max_scale_factor(self):
+        if self.Omega_k>=0:
+            return np.inf
+        
+        # Compute the zero of the expansion factor
+        sol = optimize.root_scalar(self.Esqofa, x0=1.0, fprime=self.Esqprimeofa, method='newton')    
+        
+        if sol.flag == "convergence error":
+            sol.root = np.inf
+            
+        return sol.root
+    
+
+    # Exercise:
+    # Write code to compute coordinate distance $\chi$ as a function of the scale factor
+    # Integrand is: \int c dt/a(t) = \int dchi
+    # Integrand is: \int c dt/a(t) = \int c/H0 da/E(a)/a^2(t)    
+    # Forget about the contracting case for now (but do it if you can!).
+    
+    # Write code to compute angular diameter distance as a function of the scale factor
+    # f(chi) * a(t)
+    
+    # Write code to compute the luminosity distance as a function of the scale factor
+    # f(chi) / a(t)
+
+    #
+    # Make plots of dL(z), dAng(z) for z range between 0.0 to 5.0
+
+
+flat_c = cosmology(1.0, 0.0, 0.0, 100.0)
+open_c = cosmology(0.1, 0.0, 0.0, 100.0)
+closed_c = cosmology(3.0, 0.0, 0.0, 100.0)
+
+
+# Compute scale factor versus time
+scale_arr = np.linspace(1e-2, 3., 10000)
+print(scale_arr)
+
+time_arr_flat = scale_arr*0.0
+time_arr_closed = scale_arr*0.0
+time_arr_closed_cont = scale_arr*0.0
+time_arr_open = scale_arr*0.0
+for ii in range(scale_arr.size):
+    time_arr_flat[ii] = flat_c.compute_time_given_scale(scale_arr[ii])
+    time_arr_closed[ii] = closed_c.compute_time_given_scale(scale_arr[ii])
+    time_arr_closed_cont[ii] = closed_c.compute_time_given_scale(scale_arr[ii], contracting=True)
+    time_arr_open[ii] = open_c.compute_time_given_scale(scale_arr[ii])
+
+
+import pylab as pl
+%pylab inline
+
+conf = %config InlineBackend.rc
+conf["figure.figsize"] = (6, 6)
+conf['savefig.dpi']=100
+conf['font.serif'] = "Computer Modern"
+conf['font.sans-serif'] = "Computer Modern"
+conf['text.usetex']=True
+
+width = 600
+%config InlineBackend.rc
+%pylab inline
+
+
+ax = pl.subplot(111)
+
+idx = ~(time_arr_closed==0)
+ax.plot(time_arr_closed[idx], scale_arr[idx], label="closed")
+ax.plot(time_arr_closed_cont[idx], scale_arr[idx], label="closed")
+ax.plot(time_arr_open, scale_arr, label="open")
+ax.plot(time_arr_flat, scale_arr, label="flat")
+ax.set_xlabel(r"(t - $t_{\rm today})$ [1/$H_0$]")
+ax.set_ylabel("Scale factor a")
+ax.axvline(0.0, color="k", alpha=0.6)
+ax.legend()
+ax.set_ylim(0.0, 3.0)
+ax.text(-0.15, 1.5, "today", rotation=90)
+
+
+
+
+
+
+
+
+ax = pl.subplot(111)
+
+closed_c = cosmology(1.0, 0.1, 1.0, 100.0)
+
+a = np.linspace(1.0, 10, 100000)
+eofa = closed_c.Esqofa(a)
+
+ax.plot(a, eofa)
+ax.set_ylim(-1, 1)
+ax.axhline(0)
+ax.set_xlabel("$a$")
+ax.set_ylabel("$E^2(a)$")
