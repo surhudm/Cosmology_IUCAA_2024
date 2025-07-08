@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
@@ -5,23 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Friedmann Robertson Walker models &mdash; Cosmology IUCAA 2024 0.99 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css?v=2aa19091" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=bb63aafa"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=bb63aafa"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -112,7 +110,7 @@
 \end{equation}</span></p>
 <p>where <span class="math notranslate nohighlight">\(t_e\)</span> denotes the time of emission, <span class="math notranslate nohighlight">\(t_r\)</span> denotes the time of receipt of the photon. Now let us consider the emission and reception of a consecutive crest of the light wave. Let us suppose this second crest gets emitted at <span class="math notranslate nohighlight">\(t_e + \delta t_e\)</span>, and will be received <span class="math notranslate nohighlight">\(t_r + \delta t_r\)</span>. This implies that for this second crest,</p>
 <p><span class="math">\begin{equation}
-\int_{t_e+\delta t_r}^{t_r + \delta t_r} \frac{c dt}{a(t)} = -\int_{0}^{\chi} d\chi
+\int_{t_e+\delta t_e}^{t_r + \delta t_r} \frac{c dt}{a(t)} = -\int_{0}^{\chi} d\chi
 \end{equation}</span></p>
 <p>Subtracting the above equations we get</p>
 <p><span class="math">\begin{equation}
@@ -137,7 +135,7 @@ v = \frac{d R_{\rm phys}}{dt} &=& \frac{d \left[ a(t) R_{\rm com} \right]}{dt} \
 v = \left[\frac{\dot{a}}{a}\right] R_{\rm phys}
 \end{equation}</span></p>
 <p>This shows that the velocities should be proportional to the physical distance of galaxies. The constant of proportionality <span class="math notranslate nohighlight">\(\dot{a}/a\)</span> is called the Hubble-Lemaitre parameter. Note that <span class="math notranslate nohighlight">\(\dot{a}/a\)</span> is a function of time, the value at <span class="math notranslate nohighlight">\(t={\rm today}\)</span> is called the Hubble-Lemaitre constant.</p>
-<p>In reality galaxies will not necessarily sit still in comoving coordinates due to forces from other objects nearby. These velocities are called peculiar velocities and are a result of the small scale inhomogenieties in the Universe.</p>
+<p>In reality galaxies will not necessarily sit still in comoving coordinates due to forces from other objects nearby. These velocities are called peculiar velocities and are a result of the small scale inhomogeneities in the Universe.</p>
 <p>The measurement of the Hubble Lemaitre constant is one of the biggest scientific inquiries currently. The value that Hubble derived in the 1920s was about <span class="math notranslate nohighlight">\(500\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>. It was marred by observational issues. The current accepted value for the Hubble constant ranges from <span class="math notranslate nohighlight">\(67\)</span> to <span class="math notranslate nohighlight">\(74\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>.</p>
 <p>The units of the Hubble-Lemaitre constant are the inverse of the timescale. Thus the Hubble-Lemaitre constant sets a time scale in the Universe. The value of <span class="math notranslate nohighlight">\(1/H_0\)</span> sets the order of magnitude for the timescale for the Universe. With the value of about <span class="math notranslate nohighlight">\(70\)</span> <span class="math notranslate nohighlight">\({\rm km/s/Mpc}\)</span>, you get a value which is close to <span class="math notranslate nohighlight">\(1.46\times10^{10}\)</span> years.</p>
 </section>
@@ -208,7 +206,7 @@ D_{\rm lum}(\chi) = (1+z) f(\chi)
 <h2>Dynamics of the Friedmann Robertson Walker metric<a class="headerlink" href="#Dynamics-of-the-Friedmann-Robertson-Walker-metric" title="Link to this heading"></a></h2>
 <p>Now let us try to understand how the scale factor of the Universe changes as a function of time. The equations of General Relativity govern the dynamics in the Universe. <span class="math">\begin{equation}
 G_{\mu\nu} = \frac{8 \pi G}{c^4} T_{\mu\nu}
-\end{equation}</span> where <span class="math notranslate nohighlight">\(G_{\mu\nu}\)</span> is the Einstein tensor, and <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> is the energy momentum tensor of the Universe. The left hand side of the equation concerns the metric and its derivatives. So this can be computed based on the metric components that we haver derived heuristically above.</p>
+\end{equation}</span> where <span class="math notranslate nohighlight">\(G_{\mu\nu}\)</span> is the Einstein tensor, and <span class="math notranslate nohighlight">\(T_{\mu\nu}\)</span> is the energy momentum tensor of the Universe. The left hand side of the equation concerns the metric and its derivatives. So this can be computed based on the metric components that we have derived heuristically above.</p>
 <p>We consider the coordinates to be <span class="math notranslate nohighlight">\(ct, \chi, \theta, \phi\)</span> as <span class="math notranslate nohighlight">\(0, 1, 2, 3\)</span>: <span class="math">\begin{equation}
 g_{\mu \nu} =
 \begin{pmatrix}
@@ -249,7 +247,7 @@ G_{\mu\nu} = R_{\mu\nu} - \frac{1}{2}R g_{\mu\nu}
 G_{00} = 3 \left(\frac{\dot{a}}{a} \right)^2 + 3\frac{kc^2}{a^2} \\
 G_{ij} = - \left( 2\frac{\ddot{a}}{a}  + \left[\frac{\dot{a}}{a}\right]^2 + \frac{k c^2}{a^2} \right) a^2 \gamma_{ij}\,,
 \end{eqnarray}</span></p>
-<p>where <span class="math notranslate nohighlight">\(\gamma_{ij}\)</span> is the metric of the homoegenous and isotropic 3-space, i.e., <span class="math notranslate nohighlight">\(dl^2 = \gamma_{ij}dx^{i}dx^{j}\)</span>. The other components are equal to zero. In what follows, I will show a useful way to compute these tensors in python. We will use the packages <code class="docutils literal notranslate"><span class="pre">einsteinpy</span></code> and <code class="docutils literal notranslate"><span class="pre">sympy</span></code> to carry out these tedious mathematical calculations. In your <code class="docutils literal notranslate"><span class="pre">sciserver</span></code> environment, you could install these packages by typing <code class="docutils literal notranslate"><span class="pre">%pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">einsteinpy</span></code> and restarting the jupyter kernel
+<p>where <span class="math notranslate nohighlight">\(\gamma_{ij}\)</span> is the metric of the homogeneous and isotropic 3-space, i.e., <span class="math notranslate nohighlight">\(dl^2 = \gamma_{ij}dx^{i}dx^{j}\)</span>. The other components are equal to zero. In what follows, I will show a useful way to compute these tensors in python. We will use the packages <code class="docutils literal notranslate"><span class="pre">einsteinpy</span></code> and <code class="docutils literal notranslate"><span class="pre">sympy</span></code> to carry out these tedious mathematical calculations. In your <code class="docutils literal notranslate"><span class="pre">sciserver</span></code> environment, you could install these packages by typing <code class="docutils literal notranslate"><span class="pre">%pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">einsteinpy</span></code> and restarting the jupyter kernel
 by clicking <code class="docutils literal notranslate"><span class="pre">Kernel</span></code> and then <code class="docutils literal notranslate"><span class="pre">Restart</span></code>.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -257,9 +255,9 @@ by clicking <code class="docutils literal notranslate"><span class="pre">Kernel<
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import important packages</span>
 
-<span class="kn">import</span> <span class="nn">sympy</span>
-<span class="kn">from</span> <span class="nn">einsteinpy.symbolic</span> <span class="kn">import</span> <span class="n">MetricTensor</span><span class="p">,</span> <span class="n">ChristoffelSymbols</span><span class="p">,</span> <span class="n">RiemannCurvatureTensor</span><span class="p">,</span> <span class="n">RicciTensor</span><span class="p">,</span> <span class="n">RicciScalar</span><span class="p">,</span> <span class="n">EinsteinTensor</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Function</span><span class="p">,</span> <span class="n">simplify</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">einsteinpy.symbolic</span><span class="w"> </span><span class="kn">import</span> <span class="n">MetricTensor</span><span class="p">,</span> <span class="n">ChristoffelSymbols</span><span class="p">,</span> <span class="n">RiemannCurvatureTensor</span><span class="p">,</span> <span class="n">RicciTensor</span><span class="p">,</span> <span class="n">RicciScalar</span><span class="p">,</span> <span class="n">EinsteinTensor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Function</span><span class="p">,</span> <span class="n">simplify</span>
 
 <span class="c1"># Enable the best printing solution</span>
 <span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">()</span>
@@ -272,7 +270,7 @@ by clicking <code class="docutils literal notranslate"><span class="pre">Kernel<
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define symbols</span>
 
-<span class="k">def</span> <span class="nf">get_metric</span><span class="p">(</span><span class="n">univ_type</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_metric</span><span class="p">(</span><span class="n">univ_type</span><span class="p">):</span>
     <span class="n">syms</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;t chi theta phi&quot;</span><span class="p">)</span>
     <span class="n">t</span><span class="p">,</span> <span class="n">chi</span><span class="p">,</span> <span class="n">theta</span><span class="p">,</span> <span class="n">phi</span> <span class="o">=</span> <span class="n">syms</span>
     <span class="n">a</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">sympy</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;a R c&quot;</span><span class="p">)</span>
@@ -281,7 +279,7 @@ by clicking <code class="docutils literal notranslate"><span class="pre">Kernel<
     <span class="n">list2d</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
 
     <span class="c1"># Define the function f depending upon the type of the Universe</span>
-    <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">universe</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">universe</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">universe</span><span class="o">==</span><span class="s2">&quot;flat&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">x</span>
         <span class="k">if</span> <span class="n">universe</span><span class="o">==</span><span class="s2">&quot;closed&quot;</span><span class="p">:</span>
@@ -595,10 +593,10 @@ t_0-t = \frac{2}{3H_0}
 <section id="Radiation-dominated-Universe">
 <h3>Radiation dominated Universe<a class="headerlink" href="#Radiation-dominated-Universe" title="Link to this heading"></a></h3>
 <p>In the early Universe when it was small, radiation is expected to dominate the energy density of the Universe as it increases quicker than <span class="math notranslate nohighlight">\(\rho_{\rm m}\)</span> as <span class="math notranslate nohighlight">\(a\rightarrow 0\)</span>. In this case the Friedmann equation looks like <span class="math">\begin{eqnarray}
-\left(\frac{\dot{a}}{a}\right) &=& H_0 \Omega_{r, 0} a^{-2}  \\
-\int a da &=& \int H_0 \Omega_{r, 0} dt \\
-\frac{a^2}{2} &=& H_0 \Omega_{r, 0} t  \\
-a(t) &=& [2 H_0 \Omega_{r, 0} t]^{1/2}
+\left(\frac{\dot{a}}{a}\right) &=& H_0 \Omega_{r, 0}^{1/2} a^{-2}  \\
+\int a da &=& \int H_0 \Omega_{r, 0}^{1/2} dt \\
+\frac{a^2}{2} &=& H_0 \Omega_{r, 0}^{1/2} t  \\
+a(t) &=& [2 H_0 \Omega_{r, 0}^{1/2} t]^{1/2}
 \end{eqnarray}</span></p>
 </section>
 <section id="Lambda-dominated-Universe">
@@ -625,14 +623,14 @@ a(t) = \exp\left[ H_0 \Omega_{\Lambda, 0} (t-t_0) \right] \\
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">optimize</span>
 
 
-<span class="k">class</span> <span class="nc">cosmology</span><span class="p">:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">cosmology</span><span class="p">:</span>
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Omega_m</span><span class="p">,</span> <span class="n">Omega_r</span><span class="p">,</span> <span class="n">Omega_l</span><span class="p">,</span> <span class="n">H0</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Omega_m</span><span class="p">,</span> <span class="n">Omega_r</span><span class="p">,</span> <span class="n">Omega_l</span><span class="p">,</span> <span class="n">H0</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span> <span class="o">=</span> <span class="n">Omega_m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span> <span class="o">=</span> <span class="n">Omega_r</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">=</span> <span class="n">Omega_l</span>
@@ -644,34 +642,34 @@ a(t) = \exp\left[ H_0 \Omega_{\Lambda, 0} (t-t_0) \right] \\
         <span class="bp">self</span><span class="o">.</span><span class="n">a_max</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_scale_factor</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">,</span> <span class="s2">&quot;Maximum scale factor&quot;</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">zofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">zofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
         <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">a</span> <span class="o">-</span> <span class="mf">1.</span>
 
-    <span class="k">def</span> <span class="nf">aofz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">aofz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
         <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mf">1.</span><span class="o">+</span><span class="n">z</span><span class="p">)</span>
 
     <span class="c1"># Define the RHS of the Friedmann equation</span>
-    <span class="k">def</span> <span class="nf">Esqofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Esqofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span>
 
     <span class="c1"># Define derivative of the RHS of the Friedmann equation</span>
-    <span class="k">def</span> <span class="nf">Esqprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Esqprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mf">3.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">-</span> <span class="mf">4.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">5</span> <span class="o">-</span> <span class="mf">2.</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="p">)</span>
 
     <span class="c1"># Define the RHS of the Friedmann equation</span>
-    <span class="k">def</span> <span class="nf">Eofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Eofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
 
     <span class="c1"># Define derivative of the RHS of the Friedmann equation</span>
-    <span class="k">def</span> <span class="nf">Eprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">Eprimeofa</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
         <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Omega_m</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">3</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_r</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">4</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_l</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">*</span><span class="n">a</span><span class="o">**-</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
 
 
     <span class="c1"># Define the time given a scale factor (time will be returned in units of 1/H0)</span>
-    <span class="k">def</span> <span class="nf">compute_time_given_scale</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">contracting</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">compute_time_given_scale</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">contracting</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 
         <span class="c1"># Integrate the function \int da/a/E(a) = \int d(t/(1/H0))</span>
-        <span class="k">def</span> <span class="nf">integrand</span><span class="p">(</span><span class="n">ap</span><span class="p">):</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">integrand</span><span class="p">(</span><span class="n">ap</span><span class="p">):</span>
             <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">ap</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">Eofa</span><span class="p">(</span><span class="n">ap</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="bp">self</span><span class="o">.</span><span class="n">a_max</span><span class="p">:</span>
@@ -688,7 +686,7 @@ a(t) = \exp\left[ H_0 \Omega_{\Lambda, 0} (t-t_0) \right] \\
         <span class="k">return</span> <span class="n">answer</span>
 
     <span class="c1"># Compute maximum scale factor if the Universe is closed based on the zero of Eofa</span>
-    <span class="k">def</span> <span class="nf">max_scale_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">max_scale_factor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Omega_k</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 
@@ -770,7 +768,7 @@ inf Maximum scale factor
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[168]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">pl</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
 <span class="o">%</span><span class="k">pylab</span> inline
 
 <span class="n">conf</span> <span class="o">=</span> <span class="o">%</span><span class="k">config</span> InlineBackend.rc

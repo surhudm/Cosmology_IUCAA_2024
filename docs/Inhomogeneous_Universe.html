@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
@@ -5,23 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The inhomogeneous Universe &mdash; Cosmology IUCAA 2024 0.99 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css?v=2aa19091" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=bb63aafa"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=bb63aafa"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -57,10 +55,10 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">The inhomogeneous Universe</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#Dark-matter:-the-driver-for-structure-formation">Dark matter: the driver for structure formation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#The-origin-of-fluctuations">The origin of fluctuations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#The-growth-of-density-perturbations">The growth of density perturbations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Spherical-collapse-of-a-top-hat-perturbation">Spherical collapse of a top hat perturbation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Formation-and-statistics-of-dark-matter-halos">Formation and statistics of dark matter halos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#The-bias-of-dark-matter-halos">The bias of dark matter halos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#The-growth-of-density-perturbations">The growth of density perturbations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Measurements-of-the-clustering">Measurements of the clustering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Baryon-acoustic-oscillations">Baryon acoustic oscillations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Redshift-space-distortions">Redshift space distortions</a></li>
@@ -172,7 +170,7 @@ time scales are comparable and the fluctuations are able to grow at the same rat
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Video</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">YouTubeVideo</span>
 <span class="n">width</span><span class="o">=</span><span class="mi">600</span>
 <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s2">&quot;eDGtFRj4xXc&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>
@@ -192,6 +190,55 @@ time scales are comparable and the fluctuations are able to grow at the same rat
     allowfullscreen
 
 ></iframe></div>
+</div>
+</section>
+<section id="The-growth-of-density-perturbations">
+<h2>The growth of density perturbations<a class="headerlink" href="#The-growth-of-density-perturbations" title="Link to this heading"></a></h2>
+<p>The growth of density perturbations inside the horizon can be worked out using Newtonian dynamics when perturbation are small and their scales are smaller than the horizon beyond which curvature effects dominate. We start with the continuity equation in physical coordinates <span class="math">\begin{align}
+\frac{\partial \bar\rho}{\partial t} + \vec{\nabla} \cdot [\rho \vec{v_0}] = 0
+\end{align}</span> Consider a perturbation <span class="math notranslate nohighlight">\(\delta \rho\)</span> in the density and <span class="math notranslate nohighlight">\(\delta v\)</span> in the velocity. <span class="math">\begin{align}
+\frac{\partial [\bar\rho(1+\delta]}{\partial t} + \vec{\nabla} \cdot [\bar\rho (1+\delta)(\vec{v_0} + \delta\vec{v})] = 0
+\end{align}</span> Using the background equations and keeping terms only until linear order we obtain <span class="math">\begin{align}
+\frac{\partial [\bar\rho \delta]}{\partial t} + \bar\rho \vec{\nabla} \cdot [\delta \vec{v_0} + \delta\vec{v}] &= 0 \\
+\frac{\partial [\bar\rho \delta]}{\partial t} + \bar\rho \vec{\nabla} \cdot \delta\vec{v} + \bar\rho \vec{v_0} \cdot \vec{\nabla} \delta + \bar\rho \delta \vec\nabla \cdot \vec{v_0} &= 0 \\
+\bar\rho \frac{\partial \delta}{\partial t} + \delta \frac{\partial \bar\rho}{\partial t}  + \bar\rho \vec{\nabla} \cdot \delta\vec{v} + \bar\rho \vec{v_0} \cdot \vec{\nabla} \delta + \bar\rho \delta \vec\nabla \cdot \vec{v_0} &= 0 \\
+\frac{\partial \delta}{\partial t} + \vec{\nabla} \cdot \delta\vec{v} + \vec{v_0} \cdot \vec{\nabla} \delta = 0
+\end{align}</span> This equation can be converted in to comoving coordinates by using <span class="math notranslate nohighlight">\(\vec{x} = \vec{r}/a\)</span> and the gradients will transform as <span class="math notranslate nohighlight">\(\vec{\nabla}_{r} = a^{-1}\vec{\nabla}_{x}\)</span>. We can equate the total differential of any function <span class="math notranslate nohighlight">\(f\)</span> to understand how any derivatives transform <span class="math">\begin{align}
+df &= \frac{\partial f}{\partial t}dt + \vec{\nabla}_{r} f \cdot d\vec{r} \\
+&= \frac{\partial f}{\partial t}dt + \vec{\nabla}_{r} f \cdot d (a\vec{x}) \\
+&= \frac{\partial f}{\partial t}dt + \vec{\nabla}_{r} f \cdot \left( a d \vec{x} + \vec{x}\dot{a} dt\right)\\
+&= \frac{\partial f}{\partial t}dt + \vec{\nabla}_{x} f \cdot \left( d \vec{x} + \vec{x} H dt\right) \\
+&= \left[\frac{\partial f}{\partial t} + H \vec{x}\cdot \vec{\nabla}_{x} f \right]dt  + \vec{\nabla}_{x} f \cdot \left( d \vec{x} \right)
+\end{align}</span> Thus the continuity equation in comoving coordinates looks like <span class="math">\begin{align}
+\dot \delta + \vec{\nabla}_{x} \cdot \vec{u} = 0
+\end{align}</span> where <span class="math notranslate nohighlight">\(\vec{u}=a^{-1}\delta \vec{v}\)</span>.</p>
+<p>Similarly one can use the Euler equation in physical coordinates <span class="math">\begin{align}
+\frac{\partial\vec{v}}{\partial t} + (\vec{v}\cdot\vec{\nabla})\vec{v} = -\frac{\vec{\nabla}p}{\rho} - \vec{\nabla}\Phi
+\end{align}</span> and carry out perturbations around the background to obtain: <span class="math">\begin{align}
+\dot{\vec{u}} + 2 H \vec{u} = -\frac{\nabla_{x} \delta\Phi}{a^2}
+\end{align}</span> where we have assumed pressureless fluid, and transformed derivatives to the comoving frame. And the final equation is the Poisson equation <span class="math">\begin{align}
+\nabla^2_{x} \delta\Phi &= 4 \pi G \bar\rho a^2\delta
+\end{align}</span></p>
+<p>To proceed one can take a further time derivative of the continuity equation for perturbations and and use the Euler equation of perturbations to get rid of the derivative of <span class="math notranslate nohighlight">\(\vec{u}\)</span> term. This leaves us with <span class="math">\begin{align}
+\ddot \delta + 2 H \dot \delta &= 4\pi G\bar\rho \delta \\
+&= 4\pi G \bar\rho_{0} (1+z)^3 \delta \\
+&= \frac{3H_0^2 (1+z)^3}{2} \Omega_{\rm m} \delta
+\end{align}</span> This equation can then be solved to obtain how the density perturbations grow in a general Universe. For a flat <span class="math notranslate nohighlight">\(\Lambda\)</span>CDM the growth factor can be shown to be equal to the scale factor itself. The solution of this equation is called the growth rate <span class="math notranslate nohighlight">\(D(a)\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Convert the above equation such that the derivatives are with respect to <span class="math notranslate nohighlight">\(\ln a(t)\)</span> instead of time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p>Solve the equation with initial condition <span class="math notranslate nohighlight">\(\delta = 1\)</span>, and <span class="math notranslate nohighlight">\(d\delta/d\ln a=1\)</span> at <span class="math notranslate nohighlight">\(a=0.001\)</span>.</p></li>
+</ul>
+</div>
+<p>In a flat Universe with matter <span class="math notranslate nohighlight">\(\Omega_{\rm m}=1\)</span>, this equation simplifies to <span class="math">\begin{align}
+\ddot \delta + 2 H \dot \delta &= \frac{3H^2}{2} \delta \,.
+\end{align}</span></p>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
+<ul class="simple">
+<li><p>Use the scale factor behaviour in an <span class="math notranslate nohighlight">\(\Omega_{\rm m}=1\)</span> Universe, to show that there are two solutions to this equation (hint: use ansatz that <span class="math notranslate nohighlight">\(\delta \propto t^n\)</span>. Argue that the overdensities will grow such that <span class="math notranslate nohighlight">\(\delta(a) \propto a\)</span>.</p></li>
+</ul>
 </div>
 </section>
 <section id="Spherical-collapse-of-a-top-hat-perturbation">
@@ -323,7 +370,7 @@ n(M) \equiv \frac{d}{dM} n(>M)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 <span class="n">width</span> <span class="o">=</span> <span class="mi">600</span>
 <span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/mass_function.png&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="n">width</span><span class="p">)</span>
 <br/></pre></div>
@@ -334,7 +381,7 @@ n(M) \equiv \frac{d}{dM} n(>M)
 </pre></div>
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Inhomogeneous_Universe_6_0.png" class="no-scaled-link" src="_images/Inhomogeneous_Universe_6_0.png" style="width: 600px;" />
+<img alt="_images/Inhomogeneous_Universe_7_0.png" class="no-scaled-link" src="_images/Inhomogeneous_Universe_7_0.png" style="width: 600px;" />
 </div>
 </div>
 </section>
@@ -363,48 +410,6 @@ n(M,z|\delta_0) &\approx n(M, z) - \frac{\partial n}{\partial \delta_{\rm c}} \d
 \xi_{\rm gg}(r) &= b^2 \xi_{\rm mm}(r) \\
 P_{\rm gg}(k) &= b^2 P_{\rm mm}(k) \\
 \end{align}</span> This halo bias is the scale independent quantity derived above on large scales, but acquires further scale dependence as we approach distances of the same order as the radius of the halo.</p>
-</section>
-<section id="The-growth-of-density-perturbations">
-<h2>The growth of density perturbations<a class="headerlink" href="#The-growth-of-density-perturbations" title="Link to this heading"></a></h2>
-<p>The growth of density perturbations inside the horizon can be worked out using Newtonian dynamics when perturbation are small and their scales are smaller than the horizon where curvature effects dominate. We start with the continuity equation in physical coordinates <span class="math">\begin{align}
-\frac{\partial \bar\rho}{\partial t} + \vec{\nabla} \cdot [\rho \vec{v_0}] = 0
-\end{align}</span> Consider a perturbation <span class="math notranslate nohighlight">\(\delta \rho\)</span> in the density and <span class="math notranslate nohighlight">\(\delta v\)</span> in the velocity. <span class="math">\begin{align}
-\frac{\partial [\bar\rho(1+\delta]}{\partial t} + \vec{\nabla} \cdot [\bar\rho (1+\delta)(\vec{v_0} + \delta\vec{v})] = 0
-\end{align}</span> Using the background equations and keeping terms only until linear order we obtain <span class="math">\begin{align}
-\frac{\partial [\bar\rho \delta]}{\partial t} + \bar\rho \vec{\nabla} \cdot [\delta \vec{v_0} + \delta\vec{v}] &= 0 \\
-\frac{\partial [\bar\rho \delta]}{\partial t} + \bar\rho \vec{\nabla} \cdot \delta\vec{v} + \bar\rho \vec{v_0} \cdot \vec{\nabla} \delta + \bar\rho \delta \vec\nabla \cdot \vec{v_0} &= 0 \\
-\bar\rho \frac{\partial \delta}{\partial t} + \delta \frac{\partial \bar\rho}{\partial t}  + \bar\rho \vec{\nabla} \cdot \delta\vec{v} + \bar\rho \vec{v_0} \cdot \vec{\nabla} \delta + \bar\rho \delta \vec\nabla \cdot \vec{v_0} &= 0 \\
-\frac{\partial \delta}{\partial t} + \vec{\nabla} \cdot \delta\vec{v} + \vec{v_0} \cdot \vec{\nabla} \delta = 0
-\end{align}</span> This equation can be converted in to comoving coordinates by using <span class="math notranslate nohighlight">\(\vec{x} = \vec{r}/a\)</span> and the gradients will transform as <span class="math notranslate nohighlight">\(\vec{\nabla}_{r} = a^{-1}\vec{\nabla}_{x}\)</span>. We can equate the total differential of any function <span class="math notranslate nohighlight">\(f(\vec{r}, t)\)</span> to understand how any derivatives transform :nbsphinx-math:<a href="#id1"><span class="problematic" id="id2">`</span></a>begin{align}
-df &amp;= frac{partial f}{partial t}dt + vec{nabla}_{r} f cdot dvec{r} \</p>
-<blockquote>
-<div><p>&amp;= frac{partial f}{partial t}dt + vec{nabla}_{r} f cdot d [avec{x}] \
-&amp;= frac{partial f}{partial t}dt + vec{nabla}_{r} f cdot left( a d vec{x} + vec{x}dot{a} dtright)\
-&amp;= frac{partial f}{partial t}dt + vec{nabla}_{x} f cdot left( d vec{x} + vec{x} H dtright) \
-&amp;= left[frac{partial f}{partial t} + H vec{x}cdot vec{nabla}_{x} f right]dt  + vec{nabla}_{x} f cdot left( d vec{x} right)</p>
-</div></blockquote>
-<p>end{align}` Thus the continuity equation in comoving coordinates looks like <span class="math">\begin{align}
-\dot \delta + \vec{\nabla}_{x} \cdot \vec{u} = 0
-\end{align}</span> where <span class="math notranslate nohighlight">\(\vec{u}=a^{-1}\delta \vec{v}\)</span>.</p>
-<p>Similarly one can use the Euler equation to perturbatively write <span class="math">\begin{align}
-\dot{\vec{u}} + 2 H \vec{u} = -\frac{\nabla \delta\Phi}{a^2}
-\end{align}</span> where we have assumed pressureless fluid. And the final equation is the Poisson equation :nbsphinx-math:<a href="#id3"><span class="problematic" id="id4">`</span></a>begin{align}</p>
-<blockquote>
-<div><p>nabla^2 deltaPhi = 4 pi G barrho a^2delta</p>
-</div></blockquote>
-<p>end{align}`</p>
-<p>To proceed one can take a further time derivative of the continuity equation for perturbations and and use the Euler equation of perturbations to get rid of the derivative of <span class="math notranslate nohighlight">\(\vec{u}\)</span> term. This leaves us with <span class="math">\begin{align}
-\ddot \delta + 2 H \dot \delta &= 4\pi G\bar\rho \delta \\
-&= 4\pi G \bar\rho_{0} (1+z)^3 \delta \\
-&= \frac{3H_0^2 (1+z)^3}{2} \Omega_{\rm m} \delta
-\end{align}</span> This equation can then be solved to obtain how the density perturbations grow in a general Universe. For a flat <span class="math notranslate nohighlight">\(\Lambda\)</span>CDM the growth factor can be shown to be equal to the scale factor itself. The solution of this equation is called the growth rate <span class="math notranslate nohighlight">\(D(a)\)</span>.</p>
-<div class="admonition note">
-<p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
-<ul class="simple">
-<li><p>Convert the above equation such that the derivatives are with respect to <span class="math notranslate nohighlight">\(\ln a(t)\)</span> instead of time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
-<li><p>Solve the equation with initial condition <span class="math notranslate nohighlight">\(\delta = 1\)</span>, and <span class="math notranslate nohighlight">\(d\delta/d\ln a=1\)</span> at <span class="math notranslate nohighlight">\(a=0.001\)</span>.</p></li>
-</ul>
-</div>
 </section>
 <section id="Measurements-of-the-clustering">
 <h2>Measurements of the clustering<a class="headerlink" href="#Measurements-of-the-clustering" title="Link to this heading"></a></h2>
@@ -467,7 +472,7 @@ x = x'; y = y', z=z' + \frac{u}{H} \mu
 </pre></div>
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Inhomogeneous_Universe_10_0.jpg" class="no-scaled-link" src="_images/Inhomogeneous_Universe_10_0.jpg" style="width: 600px;" />
+<img alt="_images/Inhomogeneous_Universe_11_0.jpg" class="no-scaled-link" src="_images/Inhomogeneous_Universe_11_0.jpg" style="width: 600px;" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -483,15 +488,7 @@ x = x'; y = y', z=z' + \frac{u}{H} \mu
 </pre></div>
 </div>
 <div class="output_area docutils container">
-<img alt="_images/Inhomogeneous_Universe_11_0.jpg" class="no-scaled-link" src="_images/Inhomogeneous_Universe_11_0.jpg" style="width: 600px;" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
+<img alt="_images/Inhomogeneous_Universe_12_0.jpg" class="no-scaled-link" src="_images/Inhomogeneous_Universe_12_0.jpg" style="width: 600px;" />
 </div>
 </div>
 </section>

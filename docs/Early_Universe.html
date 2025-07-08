@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
@@ -5,23 +7,19 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The early Universe &mdash; Cosmology IUCAA 2024 0.99 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/nbsphinx-code-cells.css?v=2aa19091" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=bb63aafa"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=bb63aafa"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -110,7 +108,7 @@
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">YouTubeVideo</span>
 </pre></div>
 </div>
 </div>
@@ -285,23 +283,23 @@ g^*_{s, {\rm X}} = \frac{3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}}{4} \\
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">quad</span>
-<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">zeta</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">quad</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.special</span><span class="w"> </span><span class="kn">import</span> <span class="n">zeta</span>
 
-<span class="k">class</span> <span class="nc">early_universe_particle</span><span class="p">:</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">early_universe_particle</span><span class="p">:</span>
 
     <span class="c1"># mass_in_GeV: (m_X c^2)/GeV</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mass_in_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mass_in_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">mass_in_Gev</span> <span class="o">=</span> <span class="n">mass_in_GeV</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">boson</span> <span class="o">=</span> <span class="n">boson</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">zeta3</span> <span class="o">=</span> <span class="n">zeta</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
     <span class="c1"># T_in_GeV: (k_B T)/GeV</span>
-    <span class="k">def</span> <span class="nf">effective_dof_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">effective_dof_n</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
         <span class="n">curlyM</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass_in_Gev</span><span class="o">/</span><span class="n">T_in_GeV</span>
 
         <span class="c1"># Compute the number density effective degrees of freedom</span>
-        <span class="k">def</span> <span class="nf">dnx_integ</span><span class="p">(</span><span class="n">curlyE</span><span class="p">):</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">dnx_integ</span><span class="p">(</span><span class="n">curlyE</span><span class="p">):</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">boson</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">curlyE</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">curlyE</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">curlyM</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">curlyE</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
@@ -313,14 +311,14 @@ g^*_{s, {\rm X}} = \frac{3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}}{4} \\
 
 
     <span class="c1"># Write code for the following functions:</span>
-    <span class="k">def</span> <span class="nf">effective_dof_eps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">effective_dof_eps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
 
         <span class="c1"># Write code to compute the entropy density effective degrees of freedom</span>
         <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
 
         <span class="k">return</span> <span class="n">result</span>
 
-    <span class="k">def</span> <span class="nf">effective_dof_s</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">effective_dof_s</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">T_in_GeV</span><span class="p">):</span>
 
         <span class="c1"># Write code to compute the entropy density effective degrees of freedom</span>
         <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
@@ -333,7 +331,7 @@ g^*_{s, {\rm X}} = \frac{3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}}{4} \\
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">boson_mass_GeV</span> <span class="o">=</span> <span class="mf">173.0</span>
 <span class="n">boson</span> <span class="o">=</span> <span class="n">early_universe_particle</span><span class="p">(</span><span class="n">boson_mass_GeV</span><span class="p">,</span> <span class="n">boson</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -395,7 +393,7 @@ g^*_{s, {\rm X}} = \frac{3 g^{*}_{\epsilon, {\rm X}} + g^{*}_{p, {\rm X}}}{4} \\
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">pl</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 
@@ -580,10 +578,10 @@ e^- + p^+ \leftrightarrow H + \gamma
 <p>The cosmic microwave background was discovered by Arnos Penzias and Robert Wilson in 1965, work for which they received the Nobel Prize in Physics. This is a remarkable achievement, the existence of this relic radiation from the Universe’s hot past was predicted by Gamow and colleagues even before it was observed (there was a large uncertainty about the exact temperature though). There was a huge experimental effort to detect fluctuations in the CMB, but to no avail. Without fluctuations you
 cannot form all the structure that we see in the Universe today. This non-existence of detectable fluctuations remained a conundrum for a few decades before observational progress made it possible to observe the fluctuations.</p>
 <p>The energy spectrum of the cosmic microwave background radiation was measured by the COBE satellite in 1990s. The spectrum is shown below along with a fit to a black body spectrum. The figure does not have any visible errorbars because the errors are smaller than the thickness of the line!</p>
-<img alt="CMB spectrum" src="_images/CMBspectrum.png" />
+<p><img alt="CMB spectrum" src="_images/CMBspectrum.png" /></p>
 <p>Armed with these measurements, the COBe team was able to make a detailed map of the fluctuations in the cosmic microwave background. The figure below shows the temperature measurement in the top plot as a function of position on the sky, the middle panel shows the residual after removing the monopole component, and shows the dominant dipole fluctuation due to the motion of galaxy with respect to the CMB frame/ The bottom panel shows the residual fluctuations after both the monopole and dipole
 are subtracted out.</p>
-<img alt="CMB temperature anisotropies" src="https://aether.lbl.gov/www/projects/cobe/COBE_Home/m_d_53s_1111.gif" />
+<p><img alt="CMB temperature anisotropies" src="https://aether.lbl.gov/www/projects/cobe/COBE_Home/m_d_53s_1111.gif" /></p>
 <p>First notice the degree to which the CMB is isotropic, the temperature scale is in Kelvin in the top panel, millikelvin in the middle panel and microkelvin in the bottom. The CMB fluctuations are extremely tiny of the order <span class="math notranslate nohighlight">\(10^{-5}\)</span> of the monopole. These fluctuations are our earliest look at the fluctuations which caused the formation of structure in the Universe.</p>
 <p>These fluctuations tell us a lot of information about the Universe. We will make an attempt to understand the most basic information given by the fluctuations of the CMB. As we have seen before, the CMB is relic radiation belonging to an era when the baryons and photons were tightly coupled with each other. As the temperature dropped the electrons could no longer be ionized from hydrogen atoms, and the photons started to stream freely.</p>
 <p>Let us try to understand how big would be the typical size of a fluctuation in the CMB. To understand this we need to understand how fluctuations behave in the baryon photon plasma. Recall that the pressure and density of relativistic photons are related as <span class="math notranslate nohighlight">\(p = \rho c^2/3\)</span>. Thus the speed of any pressure density fluctuations in photons and any matter coupled with radiation will be close to <span class="math notranslate nohighlight">\(c_{\rm s}^2 = dp/d\rho \approx c/3\)</span>. There are small corrections to this equation due to the
@@ -679,7 +677,7 @@ percent today.</p>
 <p>Consider cosmic microwave background photons arriving from opposite direction in the sky. These photons are just arriving today at our location. So the regions which emitted these photons should not have been in causal contact with each other in the very early Universe. Given this it is difficult to understand how these photons manage to have the same temperature to 1 part in 100000?</p>
 <div class="admonition note">
 <p class="admonition-title fa fa-exclamation-circle">Exercise:</p>
-<p>– Compute the comoving distance to the horizon at the time the cosmic microwave background photons were released. Most of the time spent in the early Universe is in the matter dominated era. The CMB photons were released about 480000 years after the big bang. Hint: Use the formula for the scale factor as a function of time in matter dominated era and the definition of the comoving horizon distance.</p>
+<p>– Compute the comoving distance to the horizon at the time the cosmic microwave background photons were released. Most of the time spent in the early Universe is in the matter dominated era. The CMB photons were released about 380000 years after the big bang. Hint: Use the formula for the scale factor as a function of time in matter dominated era and the definition of the comoving horizon distance.</p>
 <p>– Compare this distance to the distance between two points which released the CMB photons which reached today to us from opposite directions.</p>
 </div>
 <p>The large difference between these two distances is known as the horizon problem.</p>

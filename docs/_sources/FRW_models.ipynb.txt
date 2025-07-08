@@ -23,7 +23,7 @@
     "where $t_e$ denotes the time of emission, $t_r$ denotes the time of receipt of the photon. Now let us consider the emission and reception of a consecutive crest of the light wave. Let us suppose this second crest gets emitted at $t_e + \\delta t_e$, and will be received $t_r + \\delta t_r$. This implies that for this second crest, \n",
     "\n",
     "\\begin{equation}\n",
-    "\\int_{t_e+\\delta t_r}^{t_r + \\delta t_r} \\frac{c dt}{a(t)} = -\\int_{0}^{\\chi} d\\chi \n",
+    "\\int_{t_e+\\delta t_e}^{t_r + \\delta t_r} \\frac{c dt}{a(t)} = -\\int_{0}^{\\chi} d\\chi \n",
     "\\end{equation}\n",
     "\n",
     "Subtracting the above equations we get\n",
@@ -58,7 +58,7 @@
     "\n",
     "This shows that the velocities should be proportional to the physical distance of galaxies. The constant of proportionality $\\dot{a}/a$ is called the Hubble-Lemaitre parameter. Note that $\\dot{a}/a$ is a function of time, the value at $t={\\rm today}$ is called the Hubble-Lemaitre constant.\n",
     "\n",
-    "In reality galaxies will not necessarily sit still in comoving coordinates due to forces from other objects nearby. These velocities are called peculiar velocities and are a result of the small scale inhomogenieties in the Universe.\n",
+    "In reality galaxies will not necessarily sit still in comoving coordinates due to forces from other objects nearby. These velocities are called peculiar velocities and are a result of the small scale inhomogeneities in the Universe.\n",
     "\n",
     "The measurement of the Hubble Lemaitre constant is one of the biggest scientific inquiries currently. The value that Hubble derived in the 1920s was about $500$ ${\\rm km/s/Mpc}$. It was marred by observational issues. The current accepted value for the Hubble constant ranges from $67$ to $74$ ${\\rm km/s/Mpc}$.\n",
     "\n",
@@ -155,7 +155,7 @@
     "\\begin{equation}\n",
     "G_{\\mu\\nu} = \\frac{8 \\pi G}{c^4} T_{\\mu\\nu}\n",
     "\\end{equation}\n",
-    "where $G_{\\mu\\nu}$ is the Einstein tensor, and $T_{\\mu\\nu}$ is the energy momentum tensor of the Universe. The left hand side of the equation concerns the metric and its derivatives. So this can be computed based on the metric components that we haver derived heuristically above. \n",
+    "where $G_{\\mu\\nu}$ is the Einstein tensor, and $T_{\\mu\\nu}$ is the energy momentum tensor of the Universe. The left hand side of the equation concerns the metric and its derivatives. So this can be computed based on the metric components that we have derived heuristically above. \n",
     "\n",
     "We consider the coordinates to be $ct, \\chi, \\theta, \\phi$ as $0, 1, 2, 3$:\n",
     "\\begin{equation}\n",
@@ -218,7 +218,7 @@
     "G_{ij} = - \\left( 2\\frac{\\ddot{a}}{a}  + \\left[\\frac{\\dot{a}}{a}\\right]^2 + \\frac{k c^2}{a^2} \\right) a^2 \\gamma_{ij}\\,,\n",
     "\\end{eqnarray}\n",
     "\n",
-    "where $\\gamma_{ij}$ is the metric of the homoegenous and isotropic 3-space, i.e., $dl^2 = \\gamma_{ij}dx^{i}dx^{j}$. The other components are equal to zero. In what follows, I will show a useful way to compute these tensors in python. We will use the packages `einsteinpy` and `sympy` to carry out these tedious mathematical calculations. In your `sciserver` environment, you could install these packages by typing `%pip install --user einsteinpy` and restarting the jupyter kernel by clicking `Kernel` and then `Restart`."
+    "where $\\gamma_{ij}$ is the metric of the homogeneous and isotropic 3-space, i.e., $dl^2 = \\gamma_{ij}dx^{i}dx^{j}$. The other components are equal to zero. In what follows, I will show a useful way to compute these tensors in python. We will use the packages `einsteinpy` and `sympy` to carry out these tedious mathematical calculations. In your `sciserver` environment, you could install these packages by typing `%pip install --user einsteinpy` and restarting the jupyter kernel by clicking `Kernel` and then `Restart`."
    ]
   },
   {
@@ -836,10 +836,10 @@
     "\n",
     "In the early Universe when it was small, radiation is expected to dominate the energy density of the Universe as it increases quicker than $\\rho_{\\rm m}$ as $a\\rightarrow 0$.  In this case the Friedmann equation looks like\n",
     "\\begin{eqnarray}\n",
-    "\\left(\\frac{\\dot{a}}{a}\\right) &=& H_0 \\Omega_{r, 0} a^{-2}  \\\\\n",
-    "\\int a da &=& \\int H_0 \\Omega_{r, 0} dt \\\\\n",
-    "\\frac{a^2}{2} &=& H_0 \\Omega_{r, 0} t  \\\\\n",
-    "a(t) &=& [2 H_0 \\Omega_{r, 0} t]^{1/2}\n",
+    "\\left(\\frac{\\dot{a}}{a}\\right) &=& H_0 \\Omega_{r, 0}^{1/2} a^{-2}  \\\\\n",
+    "\\int a da &=& \\int H_0 \\Omega_{r, 0}^{1/2} dt \\\\\n",
+    "\\frac{a^2}{2} &=& H_0 \\Omega_{r, 0}^{1/2} t  \\\\\n",
+    "a(t) &=& [2 H_0 \\Omega_{r, 0}^{1/2} t]^{1/2}\n",
     "\\end{eqnarray}\n",
     "\n",
     "### Lambda dominated Universe\n",
@@ -1186,7 +1186,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.12.1"
+   "version": "3.13.5"
   }
  },
  "nbformat": 4,
